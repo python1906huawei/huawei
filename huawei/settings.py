@@ -77,11 +77,11 @@ WSGI_APPLICATION = 'day6.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'forum1',
+        'NAME': 'forum',
         'HOST': '127.0.0.1',
         'USER': 'root',
         'PASSWORD': '123456',
-        'PORT': 3306
+        'PORT': 3306,
     }
 }
 
@@ -126,7 +126,7 @@ STATICFILES_DIRS = [
 ]
 
 # 应该使用我们自己的User进行认证
-AUTH_USER_MODEL = 'App.User'
+# AUTH_USER_MODEL = 'App.User'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static/upload')
 
