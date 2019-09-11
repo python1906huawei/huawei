@@ -56,7 +56,7 @@ class Order(models.Model):
     money = models.IntegerField()
     paytime = models.DateTimeField(blank=True, null=True)
     tid = models.ForeignKey('Posts', models.DO_NOTHING, db_column='tid', blank=True, null=True)
-    uid = models.ForeignKey('BbsUser', models.DO_NOTHING, db_column='uid', blank=True, null=True)
+    uid = models.ForeignKey('User', models.DO_NOTHING, db_column='uid', blank=True, null=True)
 
     class Meta:
         managed = False
@@ -76,7 +76,7 @@ class Posts(models.Model):
     publishtime = models.DateTimeField(blank=True, null=True)
     isdisadle = models.SmallIntegerField(blank=True, null=True)
     cid = models.ForeignKey(Category, models.DO_NOTHING, db_column='cid', blank=True, null=True)
-    uid = models.ForeignKey('BbsUser', models.DO_NOTHING, db_column='uid', blank=True, null=True)
+    uid = models.ForeignKey('User', models.DO_NOTHING, db_column='uid', blank=True, null=True)
 
     class Meta:
         managed = False
@@ -92,7 +92,7 @@ class BbsReply(models.Model):
     createtime = models.DateTimeField(blank=True, null=True)
     isdisable = models.SmallIntegerField(blank=True, null=True)
     tid = models.ForeignKey(Posts, models.DO_NOTHING, db_column='tid', blank=True, null=True)
-    uid = models.ForeignKey('BbsUser', models.DO_NOTHING, db_column='uid', blank=True, null=True)
+    uid = models.ForeignKey('User', models.DO_NOTHING, db_column='uid', blank=True, null=True)
 
     class Meta:
         managed = False

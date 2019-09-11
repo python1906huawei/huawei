@@ -37,7 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'App.apps.AppConfig',
-    'tinymce'
+    'tinymce',
+    'celery',
+    'django_celery_results',
 ]
 
 MIDDLEWARE = [
@@ -69,7 +71,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'day6.wsgi.application'
+WSGI_APPLICATION = 'huawei.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
@@ -136,3 +138,11 @@ TINYMCE_DEFAULT_CONFIG = {
     'height': 400,
 
 }
+
+BROKER_URL = 'redis://49.232.42.221:6379/huawei'
+
+CELERY_RESULT_BACKEND = 'django-db'
+
+CELERY_TASK_SERIALIZER = 'json'
+
+CESERY_RESULT_SERIALIZER = 'json'
