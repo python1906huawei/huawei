@@ -129,7 +129,7 @@ STATICFILES_DIRS = [
 # AUTH_USER_MODEL = 'App.User'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static/upload')
-
+# 富文本编辑框
 TINYMCE_DEFAULT_CONFIG = {
     'theme': 'advanced',
     'width': 600,
