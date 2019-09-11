@@ -19,7 +19,7 @@ class Order(BaseModel):
     # 订单总价格，字段类型10进制，取小数点后两位
     total_price = models.DecimalField(max_digits=10, decimal_places=2, verbose_name='订单总价格')
 
-    total_count = models.IntegerField(max_length=999, verbose_name='订单商品总数量')
+    total_count = models.IntegerField( verbose_name='订单商品总数量')
     # 订单创建时间
     create_time = models.DateTimeField(blank=True, null=True, verbose_name='创建时间')
 
