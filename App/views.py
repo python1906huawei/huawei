@@ -1,13 +1,41 @@
 from django.shortcuts import render, HttpResponse
+from django.views.generic import ListView
 
 
 # Create your views here.
 
 # 首页
-def index(request):
-    return render(request, 'index_new.html')
+# def index(request):
+#     return render(request, 'index_new.html')
+class IndexView(ListView):
+    template_name = 'index_new.html'
+
+    def get(self, request, *args, **kwargs):
+        return render(request, 'index_new.html')
+
+    def post(self, request, *args, **kwargs):
+        return render(request, 'index_new.html')
 
 
 # 注册
-def register(request):
-    return render(request, 'register.htm')
+# def register(request):
+#     return render(request, 'register.html')
+# 注册pass
+class RegisterView(ListView):
+    template_name = 'register.html'
+
+    def get(self, request, *args, **kwargs):
+        return render(request, 'register.html')
+
+    def post(self, request, *args, **kwargs):
+        return render(request, 'register.html')
+
+
+# 顶部
+def top(request):
+    return render(request, 'head_foot/head.html')
+
+
+# 底部
+def foot(request):
+    return render(request, 'head_foot/foot.html')
