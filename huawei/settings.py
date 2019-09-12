@@ -40,6 +40,11 @@ INSTALLED_APPS = [
     'tinymce',
     'celery',
     'django_celery_results',
+    'cart',
+    'order',
+    'product',
+    'user',
+    'tinymce',
 ]
 
 MIDDLEWARE = [
@@ -79,7 +84,7 @@ WSGI_APPLICATION = 'huawei.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'forum',
+        'NAME': 'huawei',
         'HOST': '127.0.0.1',
         'USER': 'root',
         'PASSWORD': '123456',
@@ -128,10 +133,10 @@ STATICFILES_DIRS = [
 ]
 
 # 应该使用我们自己的User进行认证
-# AUTH_USER_MODEL = 'App.User'
+AUTH_USER_MODEL = 'user.User'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static/upload')
-
+# 富文本编辑框
 TINYMCE_DEFAULT_CONFIG = {
     'theme': 'advanced',
     'width': 600,
