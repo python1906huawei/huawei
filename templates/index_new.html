@@ -1,7 +1,9 @@
 {% load static %}
 <!DOCTYPE html>
 <html>
+{% block head %}
 <head>
+
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="Content-Language" content="zh-cn">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
@@ -47,6 +49,8 @@
     <![endif]--><!--[if IE 8]><script>ol.isIE8=true;</script><![endif]-->
     <!--[if lt IE 9]><script src="https://res9.vmallres.com/20190808/js/common/html5shiv.js"></script> <![endif]-->
 </head>
+{% endblock head %}
+
 <body class="wide" style="min-width: 1200px; overflow-x: hidden;">
 <img src="{% static 'images/icon-common.svg' %}" class="hide">
 <img src="{% static 'images/icon01.svg' %}" class="hide">
@@ -10891,6 +10895,7 @@ id="top-banner-min-close"&gt;关闭&lt;/a&gt;
         });
     });
 </script>
+{% block foot %}
 <!--口号-20121025 -->
 <div class="slogan-container">
     <div class="slogan">
@@ -11663,5 +11668,6 @@ id="top-banner-min-close"&gt;关闭&lt;/a&gt;
 <iframe style="display: none;" src="javascript:false"></iframe>
 <script src="{% static 'js/dmpa-min.js' %}" async="" id="dmpa"></script>
 <script src="{% static 'js/vmallcsrf.js' %}"></script>
+{% endblock foot %}
 </body>
 </html>

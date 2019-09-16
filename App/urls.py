@@ -12,4 +12,7 @@ urlpatterns = [
     # 底部
     url(r'^foot/$',views.foot,name='foot'),
 
+    # 商品详情
+    url(r'^detail/$',views.detail,name='detail')
+
 ]
