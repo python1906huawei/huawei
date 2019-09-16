@@ -5,8 +5,6 @@ from django.views.generic import ListView
 # Create your views here.
 
 # 首页
-# def index(request):
-#     return render(request, 'index_new.html')
 class IndexView(ListView):
     template_name = 'index_new.html'
 
@@ -18,9 +16,6 @@ class IndexView(ListView):
 
 
 # 注册
-# def register(request):
-#     return render(request, 'register.html')
-# 注册pass
 class RegisterView(ListView):
     template_name = 'register.html'
 
@@ -31,11 +26,34 @@ class RegisterView(ListView):
         return render(request, 'register.html')
 
 
-# 顶部  底部
-def top(request):
-    return render(request, 'base.html')
+# 顶部+底部
+class TopView(ListView):
+    template_name = 'base.html'
+
+    def get(self, request, *args, **kwargs):
+        return render(request, 'base.html')
+
+    def post(self, request, *args, **kwargs):
+        return render(request, 'base.html')
 
 
 # 商品详情
-def detail(request):
-    return render(request, 'detail_1.html')
+class DetailView(ListView):
+    template_name = 'detail_1.html'
+
+    def get(self, request, *args, **kwargs):
+        return render(request, 'detail_1.html')
+
+    def post(self, request, *args, **kwargs):
+        return render(request, 'detail_1.html')
+
+
+# 登录华为
+class LoginHuaweiView(ListView):
+    template_name = 'login.html'
+
+    def get(self, request, *args, **kwargs):
+        return render(request, 'login.html')
+
+    def post(self, request, *args, **kwargs):
+        return render(request, 'login.html')

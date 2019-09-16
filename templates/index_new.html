@@ -2,53 +2,53 @@
 <!DOCTYPE html>
 <html>
 {% block head %}
-<head>
+    <head>
 
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta http-equiv="Content-Language" content="zh-cn">
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-    <script src="{% static 'js/push.js' %}"></script>
-    <script>
-        var domainYY = 'https://yy.vmall.com';
-        var domainRush = 'https://buy.vmall.com';
-        var domainEdit = 'https://customization.vmall.com';
-        var domainMain = 'https://www.vmall.com';
-        var domainWap = 'https://m.vmall.com';
-        var domainCart = '//cart.vmall.com';
-        var domainRemark = '//remark.vmall.com';
-        var domainRms = 'https://rms.vmall.com/';
-        var domainShoppingConfig = '//addr.vmall.com';
-        var imagePath = 'https://res.vmallres.com/20190808/images';
-        var domainAccount = '//www.vmall.com';
-        var isUseAccount = 'false';
-        var upBindPhoneAddr = 'https://hwid1.vmall.com/oauth2/userCenter/bindAccount/bindMobileAccount_1.jsp?lang=zh-cn&amp;themeName=cloudTheme&amp;reqClientType=26';
-        var dominWapRecycle = 'https://coop.aihuishou.com/huawei?app=false';
-        var domainCds = 'https://cds.vmall.com';
-        var domainIps = 'https://cashier.vmall.com/cashier/voucher';
-        var scriptPath = 'https://res9.vmallres.com/20190808/js';
-        var domainAms = 'https://act.vmall.com';
-        var domainUc = 'https://member.vmall.com';
-        var openApiDomain = 'https://openapi.vmall.com';
-        var timeOutInfo = '服务器开小差了，请稍后再试！';
-        var addressFrontRegex = '[A-Za-z0-9０-９ａ-ｚＡ-Ｚ一-龥.?!,。？！，、；：＇＂（）［］｛｝;:&#039;&#034;()\\[\\]{}──·····．《》〈〉＜＞.《》〈〉&lt;&gt;·—＿＿＿＿＊____*□=／\/▲●～~……→＠＃@#￥％＆＊%&amp;*\\\\——－＝＼　 -]{1,}';
-        var easeBuyDomain = 'https://easy.vmall.com';
-        var scriptPaths = 'https://res10.vmallres.com/20190808/js';
-        var dapDomain = 'https://dap.vmall.com';
-    </script>
-    <title>华为商城（VMALL.COM）_华为手机、荣耀手机、官网正品保障</title>
-    <meta name="description"
-          content="华为商城是华为旗下面向全国服务的电子商务平台官网，我们提供正品华为手机(华为P30系列、华为Mate20系列、华为nova系列、荣耀9X、荣耀智慧屏、荣耀20、荣耀V20等)、平板电脑、配件等全新华为产品，品质保证！">
-    <meta name="keywords" content="华为P30,华为商城,华为官网,华为手机官网,华为平板,华为笔记本">
-    <meta name="mobile-agent" content="format=xhtml;url=http://m.vmall.com/">
-    <meta property="wb:webmaster" content="f62bd8cc2f7d9778">
-    <link rel="shortcut icon" href="https://www.vmall.com/favicon.ico">
-    <link href="{% static 'css/ec.css' %}" rel="stylesheet" type="text/css">
-    <link href="{% static 'css/index.css' %}" rel="stylesheet" type="text/css">
-    <script src="{% static '/a' %}" namespace="ec"></script>
-    <!--[if lte IE 6]><script>ol.isIE6=true;</script><![endif]--><!--[if IE 7]><script>ol.isIE7=true;</script>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="Content-Language" content="zh-cn">
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+        <script src="{% static 'js/push.js' %}"></script>
+        <script>
+            var domainYY = 'https://yy.vmall.com';
+            var domainRush = 'https://buy.vmall.com';
+            var domainEdit = 'https://customization.vmall.com';
+            var domainMain = 'https://www.vmall.com';
+            var domainWap = 'https://m.vmall.com';
+            var domainCart = '//cart.vmall.com';
+            var domainRemark = '//remark.vmall.com';
+            var domainRms = 'https://rms.vmall.com/';
+            var domainShoppingConfig = '//addr.vmall.com';
+            var imagePath = 'https://res.vmallres.com/20190808/images';
+            var domainAccount = '//www.vmall.com';
+            var isUseAccount = 'false';
+            var upBindPhoneAddr = 'https://hwid1.vmall.com/oauth2/userCenter/bindAccount/bindMobileAccount_1.jsp?lang=zh-cn&amp;themeName=cloudTheme&amp;reqClientType=26';
+            var dominWapRecycle = 'https://coop.aihuishou.com/huawei?app=false';
+            var domainCds = 'https://cds.vmall.com';
+            var domainIps = 'https://cashier.vmall.com/cashier/voucher';
+            var scriptPath = 'https://res9.vmallres.com/20190808/js';
+            var domainAms = 'https://act.vmall.com';
+            var domainUc = 'https://member.vmall.com';
+            var openApiDomain = 'https://openapi.vmall.com';
+            var timeOutInfo = '服务器开小差了，请稍后再试！';
+            var addressFrontRegex = '[A-Za-z0-9０-９ａ-ｚＡ-Ｚ一-龥.?!,。？！，、；：＇＂（）［］｛｝;:&#039;&#034;()\\[\\]{}──·····．《》〈〉＜＞.《》〈〉&lt;&gt;·—＿＿＿＿＊____*□=／\/▲●～~……→＠＃@#￥％＆＊%&amp;*\\\\——－＝＼　 -]{1,}';
+            var easeBuyDomain = 'https://easy.vmall.com';
+            var scriptPaths = 'https://res10.vmallres.com/20190808/js';
+            var dapDomain = 'https://dap.vmall.com';
+        </script>
+        <title>华为商城（VMALL.COM）_华为手机、荣耀手机、官网正品保障</title>
+        <meta name="description"
+              content="华为商城是华为旗下面向全国服务的电子商务平台官网，我们提供正品华为手机(华为P30系列、华为Mate20系列、华为nova系列、荣耀9X、荣耀智慧屏、荣耀20、荣耀V20等)、平板电脑、配件等全新华为产品，品质保证！">
+        <meta name="keywords" content="华为P30,华为商城,华为官网,华为手机官网,华为平板,华为笔记本">
+        <meta name="mobile-agent" content="format=xhtml;url=http://m.vmall.com/">
+        <meta property="wb:webmaster" content="f62bd8cc2f7d9778">
+        <link rel="shortcut icon" href="https://www.vmall.com/favicon.ico">
+        <link href="{% static 'css/ec.css' %}" rel="stylesheet" type="text/css">
+        <link href="{% static 'css/index.css' %}" rel="stylesheet" type="text/css">
+        <script src="{% static '/a' %}" namespace="ec"></script>
+        <!--[if lte IE 6]><script>ol.isIE6=true;</script><![endif]--><!--[if IE 7]><script>ol.isIE7=true;</script>
     <![endif]--><!--[if IE 8]><script>ol.isIE8=true;</script><![endif]-->
-    <!--[if lt IE 9]><script src="https://res9.vmallres.com/20190808/js/common/html5shiv.js"></script> <![endif]-->
-</head>
+        <!--[if lt IE 9]><script src="https://res9.vmallres.com/20190808/js/common/html5shiv.js"></script> <![endif]-->
+    </head>
 {% endblock head %}
 
 <body class="wide" style="min-width: 1200px; overflow-x: hidden;">
@@ -110,36 +110,6 @@
         <div class="s-sub">
             <ul>
                 <li><a href="https://www.vmall.com/" onclick="pushHeaderMsg('首页','https://www.vmall.com')">首页</a></li>
-{#                <li><a href="http://consumer.huawei.com/cn/" target="_blank"#}
-{#                       onclick="pushHeaderMsg('华为官网','http://consumer.huawei.com/cn/')">华为官网</a></li>#}
-{#                <li><a href="http://www.honor.cn/" target="_blank"#}
-{#                       onclick="pushHeaderMsg('荣耀官网','http://www.honor.cn/')">荣耀官网</a></li>#}
-{#                <li><a href="http://club.huawei.com/" target="_blank"#}
-{#                       onclick="pushHeaderMsg('花粉俱乐部','http://club.huawei.com')">花粉俱乐部</a></li>#}
-{#                <li><a href="javascript:;" rel="nofollow"#}
-{#                       onclick="pushHeaderMsgPriority('V码(优购码)','https://www.vmall.com/priority')">V码(优购码)</a></li>#}
-{#                <li><a href="https://www.vmall.com/company" target="_blank" onclick="pushHeaderMsg('企业购','/company')">企业购</a>#}
-{#                </li>#}
-{#                <li class="s-hwep hide" id="li-enterprise-preferential"></li>#}
-{#                <li><a href="javascript:;" onclick="showSelectRegion();pushHeaderMsg('Select Region','')">Select#}
-{#                    Region</a></li>#}
-{#                <li>#}
-{#                    <div class="s-dropdown">#}
-{#                        <div class="h">#}
-{#                            <a class="icon-dropdown">更多精彩</a>#}
-{#                        </div>#}
-{#                        <div class="b">#}
-{#                            <div class="dropdown-more w-119">#}
-{#                                <dl>#}
-{#                                    <dt><a href="http://emui.huawei.com/cn/" target="_blank">EMUI</a></dt>#}
-{#                                    <dt><a href="http://appstore.huawei.com/" target="_blank">应用市场</a></dt>#}
-{#                                    <dt><a href="http://cloud.huawei.com/" target="_blank">华为终端云空间</a></dt>#}
-{#                                    <dt><a href="http://developer.huawei.com/" target="_blank">开发者联盟</a></dt>#}
-{#                                </dl>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                </li>#}
             </ul>
         </div>
 
@@ -154,11 +124,9 @@
                                 <div class="h">
                                     <div class="">
                                         <!-- <script>document.write('<a id="top-index-loginUrl" href="https://hwid1.vmall.com/CAS/remoteLogin?loginChannel=26000000&reqClientType=26&lang=zh-cn&loginUrl=https%3A%2F%2Fhwid1.vmall.com%2FCAS%2Fportal%2Flogin.html&service=https%3A%2F%2Fwww.vmall.com%2Faccount%2Facaslogin%3Furl%3D'+encodeURIComponent(encodeURIComponent(window.location.href))+'" rel="nofollow" onclick="pushLoginMsg(\'登录\',\'\')">请登录</a>');</script> -->
-{#                                        <script>document.write('<a id="top-index-loginUrl" href="javascript:;" rel="nofollow" onclick="pushLoginMsgInfoPerson(\'登录\',\'\')">请登录</a>');</script>#}
-                                        <a id="top-index-loginUrl" href="javascript:;" rel="nofollow"
-                                           onclick="pushLoginMsgInfoPerson('登录','')">请登录</a>
-                                        <a href="https://hwid1.vmall.com/CAS/portal/userRegister/regbyphone.html?service=https://www.vmall.com/account/caslogin&amp;loginChannel=26000000&amp;reqClientType=26&amp;lang=zh-cn"
-                                           rel="nofollow" onclick="pushLoginMsg('注册','')">&nbsp;&nbsp;注册</a>
+
+                                        <a  href="{% url 'app:login-huawei' %}" >请登录</a>
+                                        <a href="{% url 'app:register' %}" >&nbsp;&nbsp;注册</a>
                                     </div>
                                 </div>
                             </div>
@@ -183,7 +151,8 @@
                                                 <a href="https://www.vmall.com/member?t=15682093832361568209392209"
                                                    rel="nofollow" timetype="timestamp" target="_blank"
                                                    onclick="pushLoginMsg('已登录','头像')">
-                                                    <img id="customerPic" src="{% static 'images/img_not_logged_in.png' %}"
+                                                    <img id="customerPic"
+                                                         src="{% static 'images/img_not_logged_in.png' %}"
                                                          alt="默认头像" imgpath="https://res.vmallres.com/20190808/images">
                                                 </a>
                                             </p>
@@ -281,7 +250,7 @@
                 <!-- <li><a href="https://www.vmall.com/member/order?t=1568209383236timestamp" timeType="timestamp" onclick = "pushMyOrderMsg()">我的订单</a></li>-->
                 <li><a href="javascript:;" timetype="timestamp" onclick="pushMyOrderMsg()">我的订单</a></li>
 
-{#                <li>#}
+                <li>
 {#                    <div class="s-dropdown s-dropdown-link">#}
 {#                        <div class="h">#}
 {#                            <a class="icon-dropdown">客户服务</a>#}
@@ -297,8 +266,8 @@
 {#                            </div>#}
 {#                        </div>#}
 {#                    </div>#}
-{#                </li>#}
-{#                <li>#}
+                </li>
+                <li>
 {#                    <div class="s-dropdown">#}
 {#                        <div class="h">#}
 {#                            <a href="#" target="_blank" class="icon-dropdown">网站导航</a>#}
@@ -376,8 +345,8 @@
 {#                            </div>#}
 {#                        </div>#}
 {#                    </div>#}
-{#                </li>#}
-{#                <li class="downloadApp">#}
+                </li>
+                <li class="downloadApp">
 {#                    <div class="s-dropdown">#}
 {#                        <div class="h">#}
 {#                            <a class="icon-dropdown">手机版</a>#}
@@ -404,7 +373,7 @@
 {#                            </div>#}
 {#                        </div>#}
 {#                    </div>#}
-{#                </li>#}
+                </li>
 
                 <li>
                     <div class="s-dropdown s-dropdown-minicart">
@@ -415,36 +384,37 @@
                             </a>
                         </div>
                         <div class="b" id="header-toolbar-minicart-content">
-                            <!-- 2017-06-19-迷你购物车-start -->
-                            <div class="dropdown-minicart">
-                                <div class="minicart-pro-empty minicart-pro-empty-index" id="minicart-pro-empty">
-                                    <p><span class="icon-minicart"></span></p>
-                                    <p id="cartInfo">您的购物车是空的，赶紧选购吧~</p>
 
-                                </div>
-                                <div class="minicart-pro-list minicart-pro-list-scroll hide"
-                                     id="minicart-pro-list-block" style="display: none;">
-                                    <ul id="minicart-goods-list"></ul>
-                                    <div class="minicart-pro-settleup" id="minicart-pro-settleup"
-                                         style="display: none;">
-                                        <p>
-                                            <span>总计：</span>
-                                            <span><b id="micro-cart-totalPrice">¥&nbsp;0</b><s
-                                                    id="micro-cart-totalOriginPrice">¥&nbsp;0</s></span>
-                                        </p>
-                                        <a class="button-minicart" id="button-minicart-go2confirm" href="javascript:;"
-                                           onclick="ec.minicart.confirm()" style="display: none;">结算</a>
-                                        <a class="button-minicart disabled" id="disbutton-minicart-go2confirm" style="">结算</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- 2017-06-19-迷你购物车-end -->
+                <!-- 2017-06-19-迷你购物车-start -->
+                <div class="dropdown-minicart">
+                    <div class="minicart-pro-empty minicart-pro-empty-index" id="minicart-pro-empty">
+                        <p><span class="icon-minicart"></span></p>
+                        <p id="cartInfo">您的购物车是空的，赶紧选购吧~</p>
+
+                    </div>
+                    <div class="minicart-pro-list minicart-pro-list-scroll hide"
+                         id="minicart-pro-list-block" style="display: none;">
+                        <ul id="minicart-goods-list"></ul>
+                        <div class="minicart-pro-settleup" id="minicart-pro-settleup"
+                             style="display: none;">
+                            <p>
+                                <span>总计：</span>
+                                <span><b id="micro-cart-totalPrice">¥&nbsp;0</b><s
+                                        id="micro-cart-totalOriginPrice">¥&nbsp;0</s></span>
+                            </p>
+                            <a class="button-minicart" id="button-minicart-go2confirm" href="javascript:;"
+                               onclick="ec.minicart.confirm()" style="display: none;">结算</a>
+                            <a class="button-minicart disabled" id="disbutton-minicart-go2confirm" style="">结算</a>
                         </div>
                     </div>
-                </li>
-            </ul>
+                </div>
+                <!-- 2017-06-19-迷你购物车-end -->
         </div>
     </div>
+    </li>
+    </ul>
+</div>
+</div>
 </div>
 <!-- 2017-06-19-捷径栏-end -->
 
@@ -5281,7 +5251,8 @@ src="https://res.vmallres.com/pimages//sale/2018-12/6Y7SW4v4hnJ9kl9fDC9d.jpg"
                                     <a href="https://www.vmall.com/member?t=15682093832481568209392209" rel="nofollow"
                                        timetype="timestamp"
                                        onclick="pushMemberMsg('头像','/member?t=1568209383248timestamp')">
-                                        <img id="gg_customerPic" src="{% static 'images/img_not_logged_in.png' %}" alt="">
+                                        <img id="gg_customerPic" src="{% static 'images/img_not_logged_in.png' %}"
+                                             alt="">
                                     </a>
                                 </div>
                                 <div class="fl">
@@ -5330,7 +5301,8 @@ src="https://res.vmallres.com/pimages//sale/2018-12/6Y7SW4v4hnJ9kl9fDC9d.jpg"
                                     <a href="http://company.vmall.com/" target="_blank"
                                        onclick="pushMsgMenu(1,'300010901','PC首页功能导航_\u4F01\u4E1A\u8D2D\u7279\u60E0','http\x3A\x2F\x2Fcompany.vmall.com')">
                                         <div class="p-img">
-                                            <img class="img0" src="{% static 'images/35ce494e9a43751016a5032ff0ec7a7b.png' %}"
+                                            <img class="img0"
+                                                 src="{% static 'images/35ce494e9a43751016a5032ff0ec7a7b.png' %}"
                                                  alt="企业购特惠">
                                         </div>
                                         <div class="p-dec">企业购特惠</div>
@@ -5340,7 +5312,8 @@ src="https://res.vmallres.com/pimages//sale/2018-12/6Y7SW4v4hnJ9kl9fDC9d.jpg"
                                     <a href="https://www.vmall.com/privilege" target="_blank"
                                        onclick="pushMsgMenu(2,'300010901','PC首页功能导航_\u4F1A\u5458\u9886\u5238','https\x3A\x2F\x2Fwww.vmall.com\x2Fprivilege')">
                                         <div class="p-img">
-                                            <img class="img1" src="{% static 'images/35ce494e9a43751016a5032ff0ec7a7b.png' %}"
+                                            <img class="img1"
+                                                 src="{% static 'images/35ce494e9a43751016a5032ff0ec7a7b.png' %}"
                                                  alt="会员领券">
                                         </div>
                                         <div class="p-dec">会员领券</div>
@@ -5350,7 +5323,8 @@ src="https://res.vmallres.com/pimages//sale/2018-12/6Y7SW4v4hnJ9kl9fDC9d.jpg"
                                     <a href="https://www.vmall.com/recycle" target="_blank"
                                        onclick="pushMsgMenu(3,'300010901','PC首页功能导航_\u4EE5\u65E7\u6362\u65B0','https\x3A\x2F\x2Fwww.vmall.com\x2Frecycle')">
                                         <div class="p-img">
-                                            <img class="img2" src="{% static 'images/35ce494e9a43751016a5032ff0ec7a7b.png' %}"
+                                            <img class="img2"
+                                                 src="{% static 'images/35ce494e9a43751016a5032ff0ec7a7b.png' %}"
                                                  alt="以旧换新">
                                         </div>
                                         <div class="p-dec">以旧换新</div>
@@ -5360,7 +5334,8 @@ src="https://res.vmallres.com/pimages//sale/2018-12/6Y7SW4v4hnJ9kl9fDC9d.jpg"
                                     <a href="https://www.vmall.com/product/10086291072503.html" target="_blank"
                                        onclick="pushMsgMenu(4,'300010901','PC首页功能导航_\u7545\u4EAB10\x20Plus','https\x3A\x2F\x2Fwww.vmall.com\x2Fproduct\x2F10086291072503.html')">
                                         <div class="p-img">
-                                            <img class="img3" src="{% static 'images/35ce494e9a43751016a5032ff0ec7a7b.png' %}"
+                                            <img class="img3"
+                                                 src="{% static 'images/35ce494e9a43751016a5032ff0ec7a7b.png' %}"
                                                  alt="畅享10 Plus">
                                         </div>
                                         <div class="p-dec">畅享10 Plus</div>
@@ -5370,7 +5345,8 @@ src="https://res.vmallres.com/pimages//sale/2018-12/6Y7SW4v4hnJ9kl9fDC9d.jpg"
                                     <a href="https://sale.vmall.com/honorhome.html" target="_blank"
                                        onclick="pushMsgMenu(5,'300010901','PC首页功能导航_\u8363\u8000\u6570\u7801','https\x3A\x2F\x2Fsale.vmall.com\x2Fhonorhome.html')">
                                         <div class="p-img">
-                                            <img class="img4" src="{% static 'images/35ce494e9a43751016a5032ff0ec7a7b.png' %}"
+                                            <img class="img4"
+                                                 src="{% static 'images/35ce494e9a43751016a5032ff0ec7a7b.png' %}"
                                                  alt="荣耀数码">
                                         </div>
                                         <div class="p-dec">荣耀数码</div>
@@ -5380,7 +5356,8 @@ src="https://res.vmallres.com/pimages//sale/2018-12/6Y7SW4v4hnJ9kl9fDC9d.jpg"
                                     <a href="https://sale.vmall.com/hwsmh.html" target="_blank"
                                        onclick="pushMsgMenu(6,'300010901','PC首页功能导航_\u534E\u4E3A\u6570\u7801','https\x3A\x2F\x2Fsale.vmall.com\x2Fhwsmh.html')">
                                         <div class="p-img">
-                                            <img class="img5" src="{% static 'images/35ce494e9a43751016a5032ff0ec7a7b.png' %}"
+                                            <img class="img5"
+                                                 src="{% static 'images/35ce494e9a43751016a5032ff0ec7a7b.png' %}"
                                                  alt="华为数码">
                                         </div>
                                         <div class="p-dec">华为数码</div>
@@ -5419,7 +5396,8 @@ src="https://res.vmallres.com/pimages//sale/2018-12/6Y7SW4v4hnJ9kl9fDC9d.jpg"
                                         <a href="https://www.vmall.com/priority" target="_blank" rel="nofollow"
                                            onclick="pushMsgMenu(1,'300011101','PC首页功能导航_\u4F18\u8D2D\u7801','https\x3A\x2F\x2Fwww.vmall.com\x2Fpriority')">
                                             <span><img class="img0"
-                                                       src="{% static 'images/35ce494e9a43751016a5032ff0ec7a7b.png' %}" alt="优购码"></span>优购码
+                                                       src="{% static 'images/35ce494e9a43751016a5032ff0ec7a7b.png' %}"
+                                                       alt="优购码"></span>优购码
                                         </a>
                                     </li>
                                     <li>
@@ -6300,7 +6278,8 @@ src="https://res.vmallres.com/pimages//sale/2018-12/6Y7SW4v4hnJ9kl9fDC9d.jpg"
                                        onclick="pushGoodsRecommendMsg('419942774',this,'39')">
                                         <div class="grid-info">
                                             <p class="grid-img">
-                                                <img alt="荣耀手环3 标准版（碳晶黑）" src="{% static 'images/428_428_1538991695890mp.png' %}">
+                                                <img alt="荣耀手环3 标准版（碳晶黑）"
+                                                     src="{% static 'images/428_428_1538991695890mp.png' %}">
                                             </p>
                                             <p class="grid-desc">50米防水 专业睡眠检测&nbsp; </p>
                                         </div>
@@ -6367,7 +6346,8 @@ src="https://res.vmallres.com/pimages//sale/2018-12/6Y7SW4v4hnJ9kl9fDC9d.jpg"
                                        target="_blank" onclick="pushGoodsRecommendMsg('10086686539979',this,'43')">
                                         <div class="grid-info">
                                             <p class="grid-img">
-                                                <img alt="荣耀存储（白色）" src="{% static 'images/428_428_1545200416146mp_002.png' %}">
+                                                <img alt="荣耀存储（白色）"
+                                                     src="{% static 'images/428_428_1545200416146mp_002.png' %}">
                                             </p>
                                             <p class="grid-desc">1TB大容量 即插即备份&nbsp; </p>
                                         </div>
@@ -6396,7 +6376,8 @@ src="https://res.vmallres.com/pimages//sale/2018-12/6Y7SW4v4hnJ9kl9fDC9d.jpg"
                                        target="_blank" onclick="pushGoodsRecommendMsg('10086843945874',this,'45')">
                                         <div class="grid-info">
                                             <p class="grid-img">
-                                                <img alt="华为安居智能摄像机（白色）" src="{% static 'images/428_428_1543305800521mp.png' %}">
+                                                <img alt="华为安居智能摄像机（白色）"
+                                                     src="{% static 'images/428_428_1543305800521mp.png' %}">
                                             </p>
                                             <p class="grid-desc">360度全景视角&nbsp; </p>
                                         </div>
@@ -6458,7 +6439,8 @@ src="https://res.vmallres.com/pimages//sale/2018-12/6Y7SW4v4hnJ9kl9fDC9d.jpg"
                                        onclick="pushGoodsRecommendMsg('328205796',this,'49')">
                                         <div class="grid-info">
                                             <p class="grid-img">
-                                                <img alt="华为运动蓝牙耳机（红色）" src="{% static 'images/428_428_1542767712417mp.png' %}">
+                                                <img alt="华为运动蓝牙耳机（红色）"
+                                                     src="{% static 'images/428_428_1542767712417mp.png' %}">
                                             </p>
                                             <p class="grid-desc">专业降噪通话 待机10天&nbsp; </p>
                                         </div>
@@ -6472,7 +6454,8 @@ src="https://res.vmallres.com/pimages//sale/2018-12/6Y7SW4v4hnJ9kl9fDC9d.jpg"
                                        onclick="pushGoodsRecommendMsg('534967719',this,'50')">
                                         <div class="grid-info">
                                             <p class="grid-img">
-                                                <img alt="华为智能体脂秤" src="{% static 'images/428_428_1542788291468mp.png' %}">
+                                                <img alt="华为智能体脂秤"
+                                                     src="{% static 'images/428_428_1542788291468mp.png' %}">
                                             </p>
                                             <p class="grid-desc">健身减脂必备&nbsp; </p>
                                         </div>
@@ -6539,7 +6522,8 @@ src="https://res.vmallres.com/pimages//sale/2018-12/6Y7SW4v4hnJ9kl9fDC9d.jpg"
                                        onclick="pushGoodsRecommendMsg('553811697',this,'54')">
                                         <div class="grid-info">
                                             <p class="grid-img">
-                                                <img alt="荣耀智能体脂秤（白色）" src="{% static 'images/428_428_1538985401864mp.png' %}">
+                                                <img alt="荣耀智能体脂秤（白色）"
+                                                     src="{% static 'images/428_428_1538985401864mp.png' %}">
                                             </p>
                                             <p class="grid-desc">BIA测脂/高精准传感&nbsp; </p>
                                         </div>
@@ -6629,7 +6613,8 @@ src="https://res.vmallres.com/pimages//sale/2018-12/6Y7SW4v4hnJ9kl9fDC9d.jpg"
                                        target="_blank" onclick="pushGoodsRecommendMsg('10086943604110',this,'60')">
                                         <div class="grid-info">
                                             <p class="grid-img">
-                                                <img alt="荣耀路由2S（白色）" src="{% static 'images/428_428_1542765330080mp_002.png' %}">
+                                                <img alt="荣耀路由2S（白色）"
+                                                     src="{% static 'images/428_428_1542765330080mp_002.png' %}">
                                             </p>
                                             <p class="grid-desc">4颗信号放大器 信号更穿墙&nbsp; </p>
                                         </div>
@@ -6643,7 +6628,8 @@ src="https://res.vmallres.com/pimages//sale/2018-12/6Y7SW4v4hnJ9kl9fDC9d.jpg"
                                        onclick="pushGoodsRecommendMsg('500647761',this,'61')">
                                         <div class="grid-info">
                                             <p class="grid-img">
-                                                <img alt="华为全景相机（蓝色）" src="{% static 'images/428_428_1542768089796mp.png' %}">
+                                                <img alt="华为全景相机（蓝色）"
+                                                     src="{% static 'images/428_428_1542768089796mp.png' %}">
                                             </p>
                                             <p class="grid-desc">360度照片/视频&nbsp; </p>
                                         </div>
@@ -6807,7 +6793,8 @@ src="https://res.vmallres.com/pimages//sale/2018-12/6Y7SW4v4hnJ9kl9fDC9d.jpg"
                                        target="_blank" onclick="pushGoodsRecommendMsg('10086307511461',this,'71')">
                                         <div class="grid-info">
                                             <p class="grid-img">
-                                                <img alt="荣耀体重秤（白色）" src="{% static 'images/428_428_1558401960638mp.png' %}">
+                                                <img alt="荣耀体重秤（白色）"
+                                                     src="{% static 'images/428_428_1558401960638mp.png' %}">
                                             </p>
                                             <p class="grid-desc">领券更优惠&nbsp; </p>
                                         </div>
@@ -6873,7 +6860,8 @@ src="https://res.vmallres.com/pimages//sale/2018-12/6Y7SW4v4hnJ9kl9fDC9d.jpg"
                                 <div class="ec-slider-item-img"><a
                                         href="https://www.vmall.com/product/10086972798950.html"
                                         onclick="_paq.push(['trackLink','首页中间通栏广告第3位', 'link', '']);ec.code.addAnalytics({hicloud:true});"
-                                        target="_blank"><img src="{% static 'images/efkVnH0or90UmtAJorp2.jpg' %}"></a></div>
+                                        target="_blank"><img src="{% static 'images/efkVnH0or90UmtAJorp2.jpg' %}"></a>
+                                </div>
                             </li>
                             <li class="ec-slider-item" style="background:;">
                                 <div class="ec-slider-item-img"><a href="https://sale.vmall.com/hwsmh.html"
@@ -6891,7 +6879,8 @@ src="https://res.vmallres.com/pimages//sale/2018-12/6Y7SW4v4hnJ9kl9fDC9d.jpg"
                                 <div class="ec-slider-item-img"><a
                                         href="https://www.vmall.com/product/10086500150623.html"
                                         onclick="_paq.push(['trackLink','首页中间通栏广告第6位', 'link', '']);ec.code.addAnalytics({hicloud:true});"
-                                        target="_blank"><img src="{% static 'images/cbBDmGMXHL8KRnHzxxOD.jpg' %}"></a></div>
+                                        target="_blank"><img src="{% static 'images/cbBDmGMXHL8KRnHzxxOD.jpg' %}"></a>
+                                </div>
                             </li>
                             <li class="ec-slider-item" style="background:;">
                                 <div class="ec-slider-item-img"><a href="https://sale.vmall.com/honorsmart.html"
@@ -7690,7 +7679,8 @@ src="https://res.vmallres.com/pimages//sale/2018-12/6Y7SW4v4hnJ9kl9fDC9d.jpg"
                                onclick="pushFoolGoodsMsg(this,2,'4','\u667A\u80FD\u7A7F\u6234','10086253509221','13')">
                                 <div class="grid-info">
                                     <p class="grid-img">
-                                        <img alt="荣耀手表魔法系列（熔岩黑）" src="{% static 'images/428_428_1540544249192mp.png' %}">
+                                        <img alt="荣耀手表魔法系列（熔岩黑）"
+                                             src="{% static 'images/428_428_1540544249192mp.png' %}">
                                     </p>
                                 </div>
                                 <div class="grid-title">荣耀手表魔法系列</div>
@@ -7778,7 +7768,8 @@ src="https://res.vmallres.com/pimages//sale/2018-12/6Y7SW4v4hnJ9kl9fDC9d.jpg"
                                onclick="pushFoolGoodsMsg(this,8,'4','\u667A\u80FD\u7A7F\u6234','10086233286421','13')">
                                 <div class="grid-info">
                                     <p class="grid-img">
-                                        <img alt="荣耀手环 5 标准版（陨石黑）" src="{% static 'images/428_428_1562750353603mp.png' %}">
+                                        <img alt="荣耀手环 5 标准版（陨石黑）"
+                                             src="{% static 'images/428_428_1562750353603mp.png' %}">
                                     </p>
                                 </div>
                                 <div class="grid-title">荣耀手环 5</div>
@@ -7809,7 +7800,8 @@ src="https://res.vmallres.com/pimages//sale/2018-12/6Y7SW4v4hnJ9kl9fDC9d.jpg"
                             <a class="thumb" href="https://www.vmall.com/product/10086686072684.html" target="_blank">
                                 <div class="grid-info">
                                     <p class="grid-img">
-                                        <img alt="荣耀手环4 标准版（陨石黑）" src="{% static 'images/428_428_1540628828647mp.png' %}">
+                                        <img alt="荣耀手环4 标准版（陨石黑）"
+                                             src="{% static 'images/428_428_1540628828647mp.png' %}">
                                     </p>
                                 </div>
                                 <div class="grid-title">荣耀手环4</div>
@@ -7850,7 +7842,8 @@ src="https://res.vmallres.com/pimages//sale/2018-12/6Y7SW4v4hnJ9kl9fDC9d.jpg"
                             <a class="thumb" href="https://www.vmall.com/product/10086568646192.html" target="_blank">
                                 <div class="grid-info">
                                     <p class="grid-img">
-                                        <img alt="荣耀小K 2 儿童手表（魔法蓝）" src="{% static 'images/428_428_1545200844844mp.png' %}">
+                                        <img alt="荣耀小K 2 儿童手表（魔法蓝）"
+                                             src="{% static 'images/428_428_1545200844844mp.png' %}">
                                     </p>
                                 </div>
                                 <div class="grid-title">荣耀小K 2 儿童手表</div>
@@ -7891,7 +7884,8 @@ src="https://res.vmallres.com/pimages//sale/2018-12/6Y7SW4v4hnJ9kl9fDC9d.jpg"
                             <a class="thumb" href="https://www.vmall.com/product/10086913521308.html" target="_blank">
                                 <div class="grid-info">
                                     <p class="grid-img">
-                                        <img alt="荣耀手环4 Running版（肆意红）" src="{% static 'images/428_428_1564128651216mp.png' %}">
+                                        <img alt="荣耀手环4 Running版（肆意红）"
+                                             src="{% static 'images/428_428_1564128651216mp.png' %}">
                                     </p>
                                 </div>
                                 <div class="grid-title">荣耀手环4 Running版</div>
@@ -7918,7 +7912,8 @@ src="https://res.vmallres.com/pimages//sale/2018-12/6Y7SW4v4hnJ9kl9fDC9d.jpg"
                             <a class="thumb" href="https://www.vmall.com/product/922041175.html" target="_blank">
                                 <div class="grid-info">
                                     <p class="grid-img">
-                                        <img alt="HUAWEI VR 2 虚拟现实眼镜" src="{% static 'images/428_428_1542613671009mp.png' %}">
+                                        <img alt="HUAWEI VR 2 虚拟现实眼镜"
+                                             src="{% static 'images/428_428_1542613671009mp.png' %}">
                                     </p>
                                 </div>
                                 <div class="grid-title">HUAWEI VR 2</div>
@@ -8051,7 +8046,8 @@ src="https://res.vmallres.com/pimages//sale/2018-12/6Y7SW4v4hnJ9kl9fDC9d.jpg"
                                onclick="pushFoolGoodsMsg(this,4,'5','\u667A\u80FD\u5BB6\u5C45','10086429153459','13')">
                                 <div class="grid-info">
                                     <p class="grid-img">
-                                        <img alt="荣耀路由Pro 2（白色）" src="{% static 'images/428_428_1545200938827mp.png' %}">
+                                        <img alt="荣耀路由Pro 2（白色）"
+                                             src="{% static 'images/428_428_1545200938827mp.png' %}">
                                     </p>
                                 </div>
                                 <div class="grid-title">荣耀路由Pro 2</div>
@@ -8077,7 +8073,8 @@ src="https://res.vmallres.com/pimages//sale/2018-12/6Y7SW4v4hnJ9kl9fDC9d.jpg"
                                onclick="pushFoolGoodsMsg(this,6,'5','\u667A\u80FD\u5BB6\u5C45','10086477642869','13')">
                                 <div class="grid-info">
                                     <p class="grid-img">
-                                        <img alt="荣耀YOYO智能音箱（白色）" src="{% static 'images/428_428_1546411816762mp.png' %}">
+                                        <img alt="荣耀YOYO智能音箱（白色）"
+                                             src="{% static 'images/428_428_1546411816762mp.png' %}">
                                     </p>
                                 </div>
                                 <div class="grid-title">荣耀YOYO智能音箱</div>
@@ -8152,7 +8149,8 @@ src="https://res.vmallres.com/pimages//sale/2018-12/6Y7SW4v4hnJ9kl9fDC9d.jpg"
                             <a class="thumb" href="https://www.vmall.com/product/10086042311676.html" target="_blank">
                                 <div class="grid-info">
                                     <p class="grid-img">
-                                        <img alt="华为路由WS5200四核版（白色）" src="{% static 'images/428_428_1557974810213mp.png' %}">
+                                        <img alt="华为路由WS5200四核版（白色）"
+                                             src="{% static 'images/428_428_1557974810213mp.png' %}">
                                     </p>
                                 </div>
                                 <div class="grid-title">华为路由WS5200四核版</div>
@@ -8231,7 +8229,8 @@ src="https://res.vmallres.com/pimages//sale/2018-12/6Y7SW4v4hnJ9kl9fDC9d.jpg"
                             <a class="thumb" href="https://www.vmall.com/product/173784619.html" target="_blank">
                                 <div class="grid-info">
                                     <p class="grid-img">
-                                        <img alt="华为随行WiFi 2 Pro（黑金色）" src="{% static 'images/428_428_1554204913709mp.png' %}">
+                                        <img alt="华为随行WiFi 2 Pro（黑金色）"
+                                             src="{% static 'images/428_428_1554204913709mp.png' %}">
                                     </p>
                                 </div>
                                 <div class="grid-title">华为随行WiFi 2 Pro</div>
@@ -8244,7 +8243,8 @@ src="https://res.vmallres.com/pimages//sale/2018-12/6Y7SW4v4hnJ9kl9fDC9d.jpg"
                             <a class="thumb" href="https://www.vmall.com/product/23860218.html" target="_blank">
                                 <div class="grid-info">
                                     <p class="grid-img">
-                                        <img alt="荣耀路由X1 增强版（白色）" src="{% static 'images/428_428_1538985163609mp.png' %}">
+                                        <img alt="荣耀路由X1 增强版（白色）"
+                                             src="{% static 'images/428_428_1538985163609mp.png' %}">
                                     </p>
                                 </div>
                                 <div class="grid-title">荣耀路由X1 增强版</div>
@@ -8257,7 +8257,8 @@ src="https://res.vmallres.com/pimages//sale/2018-12/6Y7SW4v4hnJ9kl9fDC9d.jpg"
                             <a class="thumb" href="https://www.vmall.com/product/10086884483404.html" target="_blank">
                                 <div class="grid-info">
                                     <p class="grid-img">
-                                        <img alt="华为路由器WS5102（白色）" src="{% static 'images/428_428_1542787251423mp.png' %}">
+                                        <img alt="华为路由器WS5102（白色）"
+                                             src="{% static 'images/428_428_1542787251423mp.png' %}">
                                     </p>
                                 </div>
                                 <div class="grid-title">华为路由器WS5102</div>
@@ -8270,7 +8271,8 @@ src="https://res.vmallres.com/pimages//sale/2018-12/6Y7SW4v4hnJ9kl9fDC9d.jpg"
                             <a class="thumb" href="https://www.vmall.com/product/10086444093490.html" target="_blank">
                                 <div class="grid-info">
                                     <p class="grid-img">
-                                        <img alt="华为AI音箱mini（白色）" src="{% static 'images/428_428_1560332496188mp.png' %}">
+                                        <img alt="华为AI音箱mini（白色）"
+                                             src="{% static 'images/428_428_1560332496188mp.png' %}">
                                     </p>
                                 </div>
                                 <div class="grid-title">华为AI音箱mini</div>
@@ -8283,7 +8285,8 @@ src="https://res.vmallres.com/pimages//sale/2018-12/6Y7SW4v4hnJ9kl9fDC9d.jpg"
                             <a class="thumb" href="https://www.vmall.com/product/10086375378626.html" target="_blank">
                                 <div class="grid-info">
                                     <p class="grid-img">
-                                        <img alt="华为 WiFi 放大器 （白色）" src="{% static 'images/428_428_1542787490763mp.png' %}">
+                                        <img alt="华为 WiFi 放大器 （白色）"
+                                             src="{% static 'images/428_428_1542787490763mp.png' %}">
                                     </p>
                                 </div>
                                 <div class="grid-title">华为 WiFi 放大器</div>
@@ -8296,7 +8299,8 @@ src="https://res.vmallres.com/pimages//sale/2018-12/6Y7SW4v4hnJ9kl9fDC9d.jpg"
                             <a class="thumb" href="https://www.vmall.com/product/310439420.html" target="_blank">
                                 <div class="grid-info">
                                     <p class="grid-img">
-                                        <img alt="华为随行WiFi 2（深灰色）" src="{% static 'images/428_428_1553823272956mp.png' %}">
+                                        <img alt="华为随行WiFi 2（深灰色）"
+                                             src="{% static 'images/428_428_1553823272956mp.png' %}">
                                     </p>
                                 </div>
                                 <div class="grid-title">华为随行WiFi 2</div>
@@ -8309,7 +8313,8 @@ src="https://res.vmallres.com/pimages//sale/2018-12/6Y7SW4v4hnJ9kl9fDC9d.jpg"
                             <a class="thumb" href="https://www.vmall.com/product/129656917.html" target="_blank">
                                 <div class="grid-info">
                                     <p class="grid-img">
-                                        <img alt="华为路由器WS5200（白色）" src="{% static 'images/428_428_1539914752799mp.png' %}">
+                                        <img alt="华为路由器WS5200（白色）"
+                                             src="{% static 'images/428_428_1539914752799mp.png' %}">
                                     </p>
                                 </div>
                                 <div class="grid-title">华为路由WS5200</div>
@@ -8335,7 +8340,8 @@ src="https://res.vmallres.com/pimages//sale/2018-12/6Y7SW4v4hnJ9kl9fDC9d.jpg"
                             <a class="thumb" href="https://www.vmall.com/product/179906065.html" target="_blank">
                                 <div class="grid-info">
                                     <p class="grid-img">
-                                        <img alt="华为随行WiFi 2 mini（白色）" src="{% static 'images/428_428_1553777236858mp.png' %}">
+                                        <img alt="华为随行WiFi 2 mini（白色）"
+                                             src="{% static 'images/428_428_1553777236858mp.png' %}">
                                     </p>
                                 </div>
                                 <div class="grid-title">华为随行WiFi 2 mini（白色）</div>
@@ -8379,7 +8385,8 @@ src="https://res.vmallres.com/pimages//sale/2018-12/6Y7SW4v4hnJ9kl9fDC9d.jpg"
                             <a class="thumb" href="https://www.vmall.com/product/10086462400745.html" target="_blank">
                                 <div class="grid-info">
                                     <p class="grid-img">
-                                        <img alt="华为随行WiFi 2 畅享版（白色）" src="{% static 'images/428_428_1542787558155mp.png' %}">
+                                        <img alt="华为随行WiFi 2 畅享版（白色）"
+                                             src="{% static 'images/428_428_1542787558155mp.png' %}">
                                     </p>
                                 </div>
                                 <div class="grid-title">华为随行WiFi 2 畅享版</div>
@@ -8474,7 +8481,8 @@ src="https://res.vmallres.com/pimages//sale/2018-12/6Y7SW4v4hnJ9kl9fDC9d.jpg"
                                onclick="pushFoolGoodsMsg(this,2,'6','\u70ED\u9500\u914D\u4EF6','553811697','13')">
                                 <div class="grid-info">
                                     <p class="grid-img">
-                                        <img alt="荣耀智能体脂秤（白色）" src="{% static 'images/428_428_1538985401864mp_002.png' %}">
+                                        <img alt="荣耀智能体脂秤（白色）"
+                                             src="{% static 'images/428_428_1538985401864mp_002.png' %}">
                                     </p>
                                 </div>
                                 <div class="grid-title">荣耀智能体脂秤</div>
@@ -8654,7 +8662,8 @@ src="https://res.vmallres.com/pimages//sale/2018-12/6Y7SW4v4hnJ9kl9fDC9d.jpg"
                             <a class="thumb" href="https://www.vmall.com/product/10086200517458.html" target="_blank">
                                 <div class="grid-info">
                                     <p class="grid-img">
-                                        <img alt="华为智能体脂秤 WiFi版（白色）" src="{% static 'images/428_428_1558941997467mp.png' %}">
+                                        <img alt="华为智能体脂秤 WiFi版（白色）"
+                                             src="{% static 'images/428_428_1558941997467mp.png' %}">
                                     </p>
                                 </div>
                                 <div class="grid-title">华为智能体脂秤 WiFi版</div>
@@ -8680,7 +8689,8 @@ src="https://res.vmallres.com/pimages//sale/2018-12/6Y7SW4v4hnJ9kl9fDC9d.jpg"
                             <a class="thumb" href="https://www.vmall.com/product/10086470804745.html" target="_blank">
                                 <div class="grid-info">
                                     <p class="grid-img">
-                                        <img alt="荣耀智能体脂秤WiFi版（白色）" src="{% static 'images/428_428_1558357561901mp.png' %}">
+                                        <img alt="荣耀智能体脂秤WiFi版（白色）"
+                                             src="{% static 'images/428_428_1558357561901mp.png' %}">
                                     </p>
                                 </div>
                                 <div class="grid-title">荣耀智能体脂秤WiFi版</div>
@@ -8693,7 +8703,8 @@ src="https://res.vmallres.com/pimages//sale/2018-12/6Y7SW4v4hnJ9kl9fDC9d.jpg"
                             <a class="thumb" href="https://www.vmall.com/product/3281.html" target="_blank">
                                 <div class="grid-info">
                                     <p class="grid-img">
-                                        <img alt="荣耀 AM116半入耳式耳机（白色）" src="{% static 'images/428_428_1542854594365mp.png' %}">
+                                        <img alt="荣耀 AM116半入耳式耳机（白色）"
+                                             src="{% static 'images/428_428_1542854594365mp.png' %}">
                                     </p>
                                 </div>
                                 <div class="grid-title">荣耀 AM116半入耳式耳机</div>
@@ -8710,7 +8721,8 @@ src="https://res.vmallres.com/pimages//sale/2018-12/6Y7SW4v4hnJ9kl9fDC9d.jpg"
                             <a class="thumb" href="https://www.vmall.com/product/10086780319057.html" target="_blank">
                                 <div class="grid-info">
                                     <p class="grid-img">
-                                        <img alt="华为40W超级快充移动电源 （珍珠白）" src="{% static 'images/428_428_1553601190793mp.png' %}">
+                                        <img alt="华为40W超级快充移动电源 （珍珠白）"
+                                             src="{% static 'images/428_428_1553601190793mp.png' %}">
                                     </p>
                                 </div>
                                 <div class="grid-title">华为40W超级快充移动电源</div>
@@ -8727,7 +8739,8 @@ src="https://res.vmallres.com/pimages//sale/2018-12/6Y7SW4v4hnJ9kl9fDC9d.jpg"
                             <a class="thumb" href="https://www.vmall.com/product/10086328941253.html" target="_blank">
                                 <div class="grid-info">
                                     <p class="grid-img">
-                                        <img alt="荣耀小哨兵智能摄像机 广角版（白色）" src="{% static 'images/428_428_1545911847016mp_002.png' %}">
+                                        <img alt="荣耀小哨兵智能摄像机 广角版（白色）"
+                                             src="{% static 'images/428_428_1545911847016mp_002.png' %}">
                                     </p>
                                 </div>
                                 <div class="grid-title">荣耀小哨兵智能摄像机 广角版</div>
@@ -8744,7 +8757,8 @@ src="https://res.vmallres.com/pimages//sale/2018-12/6Y7SW4v4hnJ9kl9fDC9d.jpg"
                             <a class="thumb" href="https://www.vmall.com/product/10086775818720.html" target="_blank">
                                 <div class="grid-info">
                                     <p class="grid-img">
-                                        <img alt="华为安居智能摄像机（白色）" src="{% static 'images/428_428_1543305800521mp_002.png' %}">
+                                        <img alt="华为安居智能摄像机（白色）"
+                                             src="{% static 'images/428_428_1543305800521mp_002.png' %}">
                                     </p>
                                 </div>
                                 <div class="grid-title">华为安居智能摄像机</div>
@@ -8775,7 +8789,8 @@ src="https://res.vmallres.com/pimages//sale/2018-12/6Y7SW4v4hnJ9kl9fDC9d.jpg"
                             <a class="thumb" href="https://www.vmall.com/product/570114585.html" target="_blank">
                                 <div class="grid-info">
                                     <p class="grid-img">
-                                        <img alt="荣耀小天鹅蓝牙音箱（白色）" src="{% static 'images/428_428_1543022906890mp.png' %}">
+                                        <img alt="荣耀小天鹅蓝牙音箱（白色）"
+                                             src="{% static 'images/428_428_1543022906890mp.png' %}">
                                     </p>
                                 </div>
                                 <div class="grid-title">荣耀小天鹅蓝牙音箱</div>
@@ -8836,7 +8851,8 @@ src="https://res.vmallres.com/pimages//sale/2018-12/6Y7SW4v4hnJ9kl9fDC9d.jpg"
                             <a class="thumb" href="https://www.vmall.com/product/20999181.html" target="_blank">
                                 <div class="grid-info">
                                     <p class="grid-img">
-                                        <img alt="华为三脚架自拍杆 无线版（黑色）" src="{% static 'images/428_428_1542772477082mp.png' %}">
+                                        <img alt="华为三脚架自拍杆 无线版（黑色）"
+                                             src="{% static 'images/428_428_1542772477082mp.png' %}">
                                     </p>
                                 </div>
                                 <div class="grid-title">华为无线三脚架自拍杆</div>
@@ -8849,7 +8865,8 @@ src="https://res.vmallres.com/pimages//sale/2018-12/6Y7SW4v4hnJ9kl9fDC9d.jpg"
                             <a class="thumb" href="https://www.vmall.com/product/812952235.html" target="_blank">
                                 <div class="grid-info">
                                     <p class="grid-img">
-                                        <img alt="荣耀引擎耳机2代（皓月银）" src="{% static 'images/428_428_1539941134837mp.png' %}">
+                                        <img alt="荣耀引擎耳机2代（皓月银）"
+                                             src="{% static 'images/428_428_1539941134837mp.png' %}">
                                     </p>
                                 </div>
                                 <div class="grid-title">荣耀引擎耳机2代</div>
@@ -8879,7 +8896,8 @@ src="https://res.vmallres.com/pimages//sale/2018-12/6Y7SW4v4hnJ9kl9fDC9d.jpg"
                             <a class="thumb" href="https://www.vmall.com/product/602512743.html" target="_blank">
                                 <div class="grid-info">
                                     <p class="grid-img">
-                                        <img alt="华为运动心率蓝牙耳机R1 Pro（红色）" src="{% static 'images/428_428_1539762466042mp.png' %}">
+                                        <img alt="华为运动心率蓝牙耳机R1 Pro（红色）"
+                                             src="{% static 'images/428_428_1539762466042mp.png' %}">
                                     </p>
                                 </div>
                                 <div class="grid-title">华为运动心率蓝牙耳机R1 Pro</div>
@@ -8892,7 +8910,8 @@ src="https://res.vmallres.com/pimages//sale/2018-12/6Y7SW4v4hnJ9kl9fDC9d.jpg"
                             <a class="thumb" href="https://www.vmall.com/product/430223039.html" target="_blank">
                                 <div class="grid-info">
                                     <p class="grid-img">
-                                        <img alt="荣耀三脚架自拍杆 无线版（黑色）" src="{% static 'images/428_428_1542856308170mp.png' %}">
+                                        <img alt="荣耀三脚架自拍杆 无线版（黑色）"
+                                             src="{% static 'images/428_428_1542856308170mp.png' %}">
                                     </p>
                                 </div>
                                 <div class="grid-title">荣耀三脚架自拍杆 无线版</div>
@@ -8927,7 +8946,8 @@ src="https://res.vmallres.com/pimages//sale/2018-12/6Y7SW4v4hnJ9kl9fDC9d.jpg"
                             <a class="thumb" href="https://www.vmall.com/product/10086872833199.html" target="_blank">
                                 <div class="grid-info">
                                     <p class="grid-img">
-                                        <img alt="荣耀心晴耳机 心率智能耳机（幻夜黑）" src="{% static 'images/428_428_1538991969182mp_002.png' %}">
+                                        <img alt="荣耀心晴耳机 心率智能耳机（幻夜黑）"
+                                             src="{% static 'images/428_428_1538991969182mp_002.png' %}">
                                     </p>
                                 </div>
                                 <div class="grid-title">荣耀心晴耳机</div>
@@ -8958,7 +8978,8 @@ src="https://res.vmallres.com/pimages//sale/2018-12/6Y7SW4v4hnJ9kl9fDC9d.jpg"
                             <a class="thumb" href="https://www.vmall.com/product/10086747772894.html" target="_blank">
                                 <div class="grid-info">
                                     <p class="grid-img">
-                                        <img alt="华为全景相机酷玩版（星云蓝）" src="{% static 'images/428_428_1542771794773mp.png' %}">
+                                        <img alt="华为全景相机酷玩版（星云蓝）"
+                                             src="{% static 'images/428_428_1542771794773mp.png' %}">
                                     </p>
                                 </div>
                                 <div class="grid-title">华为全景相机酷玩版</div>
@@ -9002,7 +9023,8 @@ src="https://res.vmallres.com/pimages//sale/2018-12/6Y7SW4v4hnJ9kl9fDC9d.jpg"
                             <a class="thumb" href="https://www.vmall.com/product/2247.html#7659" target="_blank">
                                 <div class="grid-info">
                                     <p class="grid-img">
-                                        <img alt="荣耀引擎耳机PLUS（香槟金）" src="{% static 'images/428_428_1542855523115mp.png' %}">
+                                        <img alt="荣耀引擎耳机PLUS（香槟金）"
+                                             src="{% static 'images/428_428_1542855523115mp.png' %}">
                                     </p>
                                 </div>
                                 <div class="grid-title">荣耀引擎耳机PLUS</div>
@@ -9046,7 +9068,8 @@ src="https://res.vmallres.com/pimages//sale/2018-12/6Y7SW4v4hnJ9kl9fDC9d.jpg"
                             <a class="thumb" href="https://www.vmall.com/product/10086441148894.html" target="_blank">
                                 <div class="grid-info">
                                     <p class="grid-img">
-                                        <img alt="荣耀月光棒 柔光自拍杆（幻夜黑）" src="{% static 'images/428_428_1542856663333mp.png' %}">
+                                        <img alt="荣耀月光棒 柔光自拍杆（幻夜黑）"
+                                             src="{% static 'images/428_428_1542856663333mp.png' %}">
                                     </p>
                                 </div>
                                 <div class="grid-title">荣耀月光棒 柔光自拍杆</div>
@@ -9059,7 +9082,8 @@ src="https://res.vmallres.com/pimages//sale/2018-12/6Y7SW4v4hnJ9kl9fDC9d.jpg"
                             <a class="thumb" href="https://www.vmall.com/product/10086209688022.html" target="_blank">
                                 <div class="grid-info">
                                     <p class="grid-img">
-                                        <img alt="荣耀高清投屏连接线（白色）" src="{% static 'images/428_428_1553821277990mp.png' %}">
+                                        <img alt="荣耀高清投屏连接线（白色）"
+                                             src="{% static 'images/428_428_1553821277990mp.png' %}">
                                     </p>
                                 </div>
                                 <div class="grid-title">荣耀高清投屏连接线</div>
@@ -9086,7 +9110,8 @@ src="https://res.vmallres.com/pimages//sale/2018-12/6Y7SW4v4hnJ9kl9fDC9d.jpg"
                             <a class="thumb" href="https://www.vmall.com/product/10086134900539.html" target="_blank">
                                 <div class="grid-info">
                                     <p class="grid-img">
-                                        <img alt="荣耀体重秤（白色）" src="{% static 'images/428_428_1558401960638mp_002.png' %}">
+                                        <img alt="荣耀体重秤（白色）"
+                                             src="{% static 'images/428_428_1558401960638mp_002.png' %}">
                                     </p>
                                 </div>
                                 <div class="grid-title">荣耀体重秤（白色）</div>
@@ -9285,7 +9310,8 @@ src="https://res.vmallres.com/pimages//sale/2018-12/6Y7SW4v4hnJ9kl9fDC9d.jpg"
                                 <div class="grid-info">
                                     <p class="grid-img">
                                         <img data-lazy-src="https://res6.vmallres.com/pimages//product/6972039900016/428_428_1558582363049mp.png"
-                                             alt="华为智选生态产品 遥控大师空调伴侣 16A （支持HUAWEI HiLink）" src="{% static 'images/mask.png' %}">
+                                             alt="华为智选生态产品 遥控大师空调伴侣 16A （支持HUAWEI HiLink）"
+                                             src="{% static 'images/mask.png' %}">
                                     </p>
                                 </div>
                                 <div class="grid-title">遥控大师空调伴侣</div>
@@ -9476,7 +9502,8 @@ src="https://res.vmallres.com/pimages//sale/2018-12/6Y7SW4v4hnJ9kl9fDC9d.jpg"
                             <a class="thumb" href="https://www.vmall.com/product/10086222137040.html" target="_blank">
                                 <div class="grid-info">
                                     <p class="grid-img">
-                                        <img alt="荣耀亲选生态产品 一圭防盗双肩包（深灰）" src="{% static 'images/428_428_1563261423570mp.png' %}">
+                                        <img alt="荣耀亲选生态产品 一圭防盗双肩包（深灰）"
+                                             src="{% static 'images/428_428_1563261423570mp.png' %}">
                                     </p>
                                 </div>
                                 <div class="grid-title">一圭防盗双肩包</div>
@@ -9593,7 +9620,8 @@ src="https://res.vmallres.com/pimages//sale/2018-12/6Y7SW4v4hnJ9kl9fDC9d.jpg"
                             <a class="thumb" href="https://www.vmall.com/product/10086671993576.html" target="_blank">
                                 <div class="grid-info">
                                     <p class="grid-img">
-                                        <img alt="莱克吉米干衣机 GY101" src="{% static 'images/428_428_1541724894128mp.png' %}">
+                                        <img alt="莱克吉米干衣机 GY101"
+                                             src="{% static 'images/428_428_1541724894128mp.png' %}">
                                     </p>
                                 </div>
                                 <div class="grid-title">莱克吉米干衣机</div>
@@ -9668,7 +9696,8 @@ src="https://res.vmallres.com/pimages//sale/2018-12/6Y7SW4v4hnJ9kl9fDC9d.jpg"
                             <a class="thumb" href="https://www.vmall.com/product/10086751400736.html" target="_blank">
                                 <div class="grid-info">
                                     <p class="grid-img">
-                                        <img alt="易百珑无线动能开关（一键）" src="{% static 'images/428_428_1557219741672mp.png' %}">
+                                        <img alt="易百珑无线动能开关（一键）"
+                                             src="{% static 'images/428_428_1557219741672mp.png' %}">
                                     </p>
                                 </div>
                                 <div class="grid-title">易百珑无线动能开关</div>
@@ -9681,7 +9710,8 @@ src="https://res.vmallres.com/pimages//sale/2018-12/6Y7SW4v4hnJ9kl9fDC9d.jpg"
                             <a class="thumb" href="https://www.vmall.com/product/10086141917158.html" target="_blank">
                                 <div class="grid-info">
                                     <p class="grid-img">
-                                        <img alt="公牛魔方USB插座 有线版（白色）" src="{% static 'images/428_428_1542070802284mp.png' %}">
+                                        <img alt="公牛魔方USB插座 有线版（白色）"
+                                             src="{% static 'images/428_428_1542070802284mp.png' %}">
                                     </p>
                                 </div>
                                 <div class="grid-title">公牛魔方USB插座</div>
@@ -9893,7 +9923,8 @@ src="https://res.vmallres.com/pimages//sale/2018-12/6Y7SW4v4hnJ9kl9fDC9d.jpg"
                                onclick="pushFoolGoodsMsg(this,3,'8','\u7CBE\u9009\u914D\u4EF6','10086546378784','13')">
                                 <div class="grid-info">
                                     <p class="grid-img">
-                                        <img alt="锐舞（RANVOO）驱蚊捕蚊物理灭蚊灯 白色" src="{% static 'images/428_428_1559093606308mp.png' %}">
+                                        <img alt="锐舞（RANVOO）驱蚊捕蚊物理灭蚊灯 白色"
+                                             src="{% static 'images/428_428_1559093606308mp.png' %}">
                                     </p>
                                 </div>
                                 <div class="grid-title">锐舞驱蚊捕蚊物理灭蚊灯 白色</div>
@@ -10896,606 +10927,615 @@ id="top-banner-min-close"&gt;关闭&lt;/a&gt;
     });
 </script>
 {% block foot %}
-<!--口号-20121025 -->
-<div class="slogan-container">
-    <div class="slogan">
-        <ul>
-            <li class="s1"><a target="_blank" href="https://www.vmall.com/help/faq-934.html" rel="nofollow"
-                              onclick="pushFootAdvertMsg('公司介绍','https://www.vmall.com/help/faq-934.html')"><i></i>百强企业&nbsp;品质保证</a>
-            </li>
-            <li class="s2"><a target="_blank" href="https://www.vmall.com/help/faq-834.html" rel="nofollow"
-                              onclick="pushFootAdvertMsg('退换货政策','https://www.vmall.com/help/faq-834.html')"><i></i>7天退货&nbsp;15天换货</a>
-            </li>
-            <li class="s3">
-                <a target="_blank" href="https://www.vmall.com/help/faq-4367.html" rel="nofollow"
-                   onclick="pushFootAdvertMsg('物流帮助','https://www.vmall.com/help/faq-4367.html')"><i></i>
-                    <span>48元起免运费</span>
-                </a>
-            </li>
-            <li class="s4"><a target="_blank" href="http://consumer.huawei.com/cn/support/service-center/index.htm"
-                              rel="nofollow"
-                              onclick="pushFootAdvertMsg('服务中心','http://consumer.huawei.com/cn/support/service-center/index.htm')"><i></i>1000家维修网点&nbsp;全国联保</a>
-            </li>
-        </ul>
-    </div>
-</div><!--口号-end -->
-
-<!-- 2017-02-15-服务-start -->
-<div class="service-container">
-    <div class="service">
-        <div class="service-l fl">
-            <dl class="s1">
-                <dt>
-                    <p class="title">购物相关</p>
-                </dt>
-                <dd>
-                    <ol>
-                        <li><a target="_blank" href="https://www.vmall.com/help/faq-4355.html" rel="nofollow">购物指南</a>
-                        </li>
-                        <li><a target="_blank" href="https://www.vmall.com/help/faq-4367.html" rel="nofollow">配送方式</a>
-                        </li>
-                        <li><a target="_blank" href="https://www.vmall.com/help/faq-4357.html" rel="nofollow">支付方式</a>
-                        </li>
-                        <li><a target="_blank" href="https://www.vmall.com/help/category-16.html"
-                               rel="nofollow">常见问题</a></li>
-                    </ol>
-                </dd>
-            </dl>
-            <dl class="s2">
-                <dt>
-                    <p class="title">保修与退换货</p>
-                </dt>
-                <dd>
-                    <ol>
-                        <li><a target="_blank" href="https://www.vmall.com/help/faq-833.html" rel="nofollow">保修政策</a>
-                        </li>
-                        <li><a target="_blank" href="https://www.vmall.com/help/faq-834.html" rel="nofollow">退换货政策</a>
-                        </li>
-                        <li><a target="_blank" href="https://www.vmall.com/help/faq-5259.html" rel="nofollow">退换货流程</a>
-                        </li>
-                        <li><a target="_blank" href="http://consumer.huawei.com/cn/support/warranty-query/index.htm"
-                               rel="nofollow">保修状态查询</a></li>
-                        <li><a target="_blank" href="http://c-ver.huawei.com/web/" rel="nofollow">配件防伪查询</a></li>
-                    </ol>
-                </dd>
-            </dl>
-            <dl class="s3">
-                <dt>
-                    <p class="title">维修与技术支持</p></dt>
-                <dd>
-                    <ol>
-                        <li><a target="_blank" href="http://consumer.huawei.com/cn/support/service-center/index.htm"
-                               rel="nofollow">售后网点</a></li>
-                        <li><a target="_blank" href="http://consumer.huawei.com/cn/support/reservation/index.htm"
-                               rel="nofollow">预约维修</a></li>
-                        <li><a target="_blank" href="http://consumer.huawei.com/cn/support/express-repair/index.htm"
-                               rel="nofollow">手机寄修</a></li>
-                        <li><a target="_blank" href="http://consumer.huawei.com/cn/support/sparepart-price/index.htm"
-                               rel="nofollow">备件价格查询</a></li>
-                        <li><a target="_blank" href="http://consumer.huawei.com/cn/support/door-to-door-service/"
-                               rel="nofollow">上门服务</a></li>
-                    </ol>
-                </dd>
-            </dl>
-            <dl class="s4">
-                <dt>
-                    <p class="title">特色服务</p></dt>
-                <dd>
-                    <ol>
-                        <li><a target="_blank" href="https://consumer.huawei.com/cn/support/distinguish/"
-                               rel="nofollow">防伪查询</a></li>
-                        <li><a target="_blank" href="https://www.vmall.com/order/tcsProductIndex"
-                               rel="nofollow">补购保障</a></li>
-                        <li><a target="_blank" href="https://www.vmall.com/recycle" rel="nofollow">以旧换新</a></li>
-                        <li><a target="_blank" href="https://www.vmall.com/product/10086344499475.html#10086230774569"
-                               rel="nofollow">礼品包装</a></li>
-                    </ol>
-                </dd>
-            </dl>
-            <dl class="s5">
-                <dt>
-                    <p class="title">关于我们</p></dt>
-                <dd>
-                    <ol>
-                        <li><a target="_blank" href="https://www.huawei.com/cn/about-huawei/corporate-information"
-                               rel="nofollow">公司介绍</a></li>
-                        <li><a target="_blank" href="https://www.vmall.com/help/faq-939.html" rel="nofollow">华为商城简介</a>
-                        </li>
-                        <li><a target="_blank" href="https://www.vmall.com/offshop/hwshoplist" rel="nofollow">华为线下门店</a>
-                        </li>
-                        <li><a target="_blank" href="https://www.vmall.com/offshop/shoplist" rel="nofollow">荣耀线下门店</a>
-                        </li>
-                        <li><a target="_blank" href="https://www.vmall.com/job" rel="nofollow">诚征英才</a></li>
-                        <li><a href="javascript:;" title="意见反馈" onclick="ec.survery.open();pushRightHelpMsg(3)">意见反馈</a>
-                        </li>
-                    </ol>
-                </dd>
-            </dl>
-            <dl class="s6" id="serverlink">
-                <dt class="relative">
-                    <p class="title">友情链接</p>
-                    <p class="button"><span class="btn btn-prev disabled"> &lt; </span><span
-                            class="btn btn-next"> &gt; </span></p>
-                </dt>
-                <dd class="">
-                    <div class="service-list clearfix" style="width: 1431px;">
-                        <ol>
-                            <li><a onclick="jump_link('http://www.huawei.com/cn/')" target="_blank"
-                                   href="http://www.huawei.com/cn/">华为集团</a></li>
-                            <li><a onclick="jump_link('https://consumer.huawei.com/cn/')" target="_blank"
-                                   href="https://consumer.huawei.com/cn/">华为CBG官网</a></li>
-                            <li><a onclick="jump_link('http://www.honor.cn/')" target="_blank"
-                                   href="http://www.honor.cn/">荣耀官网</a></li>
-                            <li><a onclick="jump_link('http://club.huawei.com/')" target="_blank"
-                                   href="http://club.huawei.com/">花粉俱乐部</a></li>
-                            <li><a onclick="jump_link('https://www.huaweicloud.com/')" target="_blank"
-                                   href="https://www.huaweicloud.com/">华为云</a></li>
-                        </ol>
-                        <ol>
-                            <li><a onclick="jump_link('https://www.vmall.com/shopdc/sitemap.html/')" target="_blank"
-                                   href="https://www.vmall.com/shopdc/sitemap.html/">网站地图</a></li>
-                            <li><a onclick="jump_link('http://app.hicloud.com/')" target="_blank"
-                                   href="http://app.hicloud.com/">华为应用市场</a></li>
-                            <li><a onclick="jump_link('http://www.wbiao.cn/')" target="_blank"
-                                   href="http://www.wbiao.cn/">万表网</a></li>
-                            <li><a onclick="jump_link('http://www.askci.com/')" target="_blank"
-                                   href="http://www.askci.com/">中商情报网</a></li>
-                            <li><a onclick="jump_link('http://www.shuame.com/')" target="_blank"
-                                   href="http://www.shuame.com/">刷机精灵</a></li>
-                        </ol>
-                        <ol>
-                            <li><a onclick="jump_link('https://www.vmall.com/')" target="_blank"
-                                   href="https://www.vmall.com/">华为手机</a></li>
-                            <li><a onclick="jump_link('http://www.17ugo.com/')" target="_blank"
-                                   href="http://www.17ugo.com/">优购物官网</a></li>
-                            <li><a onclick="jump_link('http://www.znds.com/')" target="_blank"
-                                   href="http://www.znds.com/">智能电视</a></li>
-                            <li><a onclick="jump_link('http://www.uc.cn/')" target="_blank" href="http://www.uc.cn/">UC浏览器</a>
-                            </li>
-                            <li><a onclick="jump_link('http://www.zol.com/')" target="_blank"
-                                   href="http://www.zol.com/">中关村商城</a></li>
-                        </ol>
-                        <ol>
-                            <li><a onclick="jump_link('http://www.kugou.com/')" target="_blank"
-                                   href="http://www.kugou.com/">酷狗音乐</a></li>
-                            <li><a onclick="jump_link('http://www.958shop.com/')" target="_blank"
-                                   href="http://www.958shop.com/">百信手机网</a></li>
-                            <li><a onclick="jump_link('http://www.cardbaobao.com/')" target="_blank"
-                                   href="http://www.cardbaobao.com/">卡宝宝网</a></li>
-                            <li><a onclick="jump_link('http://www.duote.com/')" target="_blank"
-                                   href="http://www.duote.com/">多特软件下载</a></li>
-                            <li><a onclick="jump_link('http://www.tongbu.com/')" target="_blank"
-                                   href="http://www.tongbu.com/">同步助手</a></li>
-                        </ol>
-                        <ol>
-                            <li><a onclick="jump_link('http://www.fengniao.com/')" target="_blank"
-                                   href="http://www.fengniao.com/">蜂鸟摄影网</a></li>
-                            <li><a onclick="jump_link('http://www.7po.com/')" target="_blank"
-                                   href="http://www.7po.com/">奇珀论坛</a></li>
-                            <li><a onclick="jump_link('http://www.homekoo.com/')" target="_blank"
-                                   href="http://www.homekoo.com/">家具商城</a></li>
-                            <li><a onclick="jump_link('http://www.paixie.net/')" target="_blank"
-                                   href="http://www.paixie.net/">拍鞋网商城</a></li>
-                            <li><a onclick="jump_link('http://www.obolee.com/')" target="_blank"
-                                   href="http://www.obolee.com/">欧宝丽珠宝</a></li>
-                        </ol>
-                        <ol>
-                            <li><a onclick="jump_link('http://www.xungou.com/')" target="_blank"
-                                   href="http://www.xungou.com/">寻购网</a></li>
-                            <li><a onclick="jump_link('http://www.yzmg.com/')" target="_blank"
-                                   href="http://www.yzmg.com/">亿智蘑菇</a></li>
-                            <li><a onclick="jump_link('http://www.wandoujia.com/')" target="_blank"
-                                   href="http://www.wandoujia.com/">安卓市场</a></li>
-                            <li><a onclick="jump_link('http://baike.1688.com/')" target="_blank"
-                                   href="http://baike.1688.com/">阿里巴巴生意经</a></li>
-                            <li><a onclick="jump_link('http://product.cnmo.com/')" target="_blank"
-                                   href="http://product.cnmo.com/">手机大全</a></li>
-                        </ol>
-                        <ol>
-                            <li><a onclick="jump_link('http://www.anzow.com/')" target="_blank"
-                                   href="http://www.anzow.com/">安卓软件园</a></li>
-                            <li><a onclick="jump_link('http://www.wpxap.com/')" target="_blank"
-                                   href="http://www.wpxap.com/">智机论坛</a></li>
-                            <li><a onclick="jump_link('http://www.eepw.com.cn/')" target="_blank"
-                                   href="http://www.eepw.com.cn/">电子产品世界</a></li>
-                            <li><a onclick="jump_link('http://www.liqucn.com/')" target="_blank"
-                                   href="http://www.liqucn.com/">历趣网</a></li>
-                            <li><a onclick="jump_link('http://www.51bi.com/')" target="_blank"
-                                   href="http://www.51bi.com/">网购返利</a></li>
-                        </ol>
-                        <ol>
-                            <li><a onclick="jump_link('http://www.apple110.com/')" target="_blank"
-                                   href="http://www.apple110.com/">Apple110</a></li>
-                            <li><a onclick="jump_link('http://www.91.com/')" target="_blank" href="http://www.91.com/">91手机门户网</a>
-                            </li>
-                            <li><a onclick="jump_link('http://www.ydss.cn/')" target="_blank"
-                                   href="http://www.ydss.cn/">移动叔叔</a></li>
-                            <li><a onclick="jump_link('http://www.outlets365.com/')" target="_blank"
-                                   href="http://www.outlets365.com/">奥特莱斯</a></li>
-                            <li><a onclick="jump_link('https://www.vmall.com/')" target="_blank"
-                                   href="https://www.vmall.com/">荣耀Magic</a></li>
-                        </ol>
-                        <ol>
-                            <li><a onclick="jump_link('http://car.ctrip.com/')" target="_blank"
-                                   href="http://car.ctrip.com/">携程租车</a></li>
-                            <li><a onclick="jump_link('http://www.hwtrip.com/')" target="_blank"
-                                   href="http://www.hwtrip.com/">爱旅官网</a></li>
-                        </ol>
-                    </div>
-                    <script type="text/javascript">
-                        jump_link = function (url) {
-                            var win = window.open(url, "_blank");
-                            win.opener = null;
-                        }
-                    </script>
-                </dd>
-            </dl>
+    <!--口号-20121025 -->
+    <div class="slogan-container">
+        <div class="slogan">
+            <ul>
+                <li class="s1"><a target="_blank" href="https://www.vmall.com/help/faq-934.html" rel="nofollow"
+                                  onclick="pushFootAdvertMsg('公司介绍','https://www.vmall.com/help/faq-934.html')"><i></i>百强企业&nbsp;品质保证</a>
+                </li>
+                <li class="s2"><a target="_blank" href="https://www.vmall.com/help/faq-834.html" rel="nofollow"
+                                  onclick="pushFootAdvertMsg('退换货政策','https://www.vmall.com/help/faq-834.html')"><i></i>7天退货&nbsp;15天换货</a>
+                </li>
+                <li class="s3">
+                    <a target="_blank" href="https://www.vmall.com/help/faq-4367.html" rel="nofollow"
+                       onclick="pushFootAdvertMsg('物流帮助','https://www.vmall.com/help/faq-4367.html')"><i></i>
+                        <span>48元起免运费</span>
+                    </a>
+                </li>
+                <li class="s4"><a target="_blank" href="http://consumer.huawei.com/cn/support/service-center/index.htm"
+                                  rel="nofollow"
+                                  onclick="pushFootAdvertMsg('服务中心','http://consumer.huawei.com/cn/support/service-center/index.htm')"><i></i>1000家维修网点&nbsp;全国联保</a>
+                </li>
+            </ul>
         </div>
-        <div class="service-r fl">
-            <dl class="s7">
-                <dt>
-                    <p class="title">400-088-6888</p></dt>
-                <dd>
-                    <ol>
-                        <li><a>7x24小时客服热线（仅收市话费）</a></li>
-                    </ol>
-                </dd>
-                <dd>
-                    <a id="tools-nav-service-robotim-button" rel="nofollow" class="service-btn btn-line-primary"
-                       href="https://celia.consumer.huawei.com/vmall/#/?businessUUID=902d812b8bdb44e089e34544fb5d77e2&amp;enterurl=https%3A%2F%2Fwww.vmall.com%2Findex.html&amp;k=1&amp;from=06&amp;remark="
-                       target="_blank" style="display: block;"><i class=""></i> 在线客服</a>
-                </dd>
-            </dl>
-            <div class="service-code clearfix">
-                <h2>关注Vmall：</h2>
-                <ul class="clearfix">
-                    <li class="iconfont">
-                        <a href="javascript:;"></a>
-                        <div class="service-code-img"><img src="{% static 'images/20181116180507506.jpg' %}"></div>
-                    </li>
-                    <li class="iconfont">
-                        <a target="_blank" href="https://www.toutiao.com/c/user/52373534151/#mid=52586950033"
-                           rel="nofollow"></a>
-                    </li>
-                    <li class="iconfont">
-                        <a target="_blank" href="https://weibo.com/shophuawei" rel="nofollow"></a>
-                    </li>
-                    <li class="iconfont">
-                        <a target="_blank" href="https://club.huawei.com/" rel="nofollow"></a>
-                    </li>
-                </ul>
+    </div><!--口号-end -->
 
+    <!-- 2017-02-15-服务-start -->
+    <div class="service-container">
+        <div class="service">
+            <div class="service-l fl">
+                <dl class="s1">
+                    <dt>
+                        <p class="title">购物相关</p>
+                    </dt>
+                    <dd>
+                        <ol>
+                            <li><a target="_blank" href="https://www.vmall.com/help/faq-4355.html"
+                                   rel="nofollow">购物指南</a>
+                            </li>
+                            <li><a target="_blank" href="https://www.vmall.com/help/faq-4367.html"
+                                   rel="nofollow">配送方式</a>
+                            </li>
+                            <li><a target="_blank" href="https://www.vmall.com/help/faq-4357.html"
+                                   rel="nofollow">支付方式</a>
+                            </li>
+                            <li><a target="_blank" href="https://www.vmall.com/help/category-16.html"
+                                   rel="nofollow">常见问题</a></li>
+                        </ol>
+                    </dd>
+                </dl>
+                <dl class="s2">
+                    <dt>
+                        <p class="title">保修与退换货</p>
+                    </dt>
+                    <dd>
+                        <ol>
+                            <li><a target="_blank" href="https://www.vmall.com/help/faq-833.html"
+                                   rel="nofollow">保修政策</a>
+                            </li>
+                            <li><a target="_blank" href="https://www.vmall.com/help/faq-834.html"
+                                   rel="nofollow">退换货政策</a>
+                            </li>
+                            <li><a target="_blank" href="https://www.vmall.com/help/faq-5259.html"
+                                   rel="nofollow">退换货流程</a>
+                            </li>
+                            <li><a target="_blank" href="http://consumer.huawei.com/cn/support/warranty-query/index.htm"
+                                   rel="nofollow">保修状态查询</a></li>
+                            <li><a target="_blank" href="http://c-ver.huawei.com/web/" rel="nofollow">配件防伪查询</a></li>
+                        </ol>
+                    </dd>
+                </dl>
+                <dl class="s3">
+                    <dt>
+                        <p class="title">维修与技术支持</p></dt>
+                    <dd>
+                        <ol>
+                            <li><a target="_blank" href="http://consumer.huawei.com/cn/support/service-center/index.htm"
+                                   rel="nofollow">售后网点</a></li>
+                            <li><a target="_blank" href="http://consumer.huawei.com/cn/support/reservation/index.htm"
+                                   rel="nofollow">预约维修</a></li>
+                            <li><a target="_blank" href="http://consumer.huawei.com/cn/support/express-repair/index.htm"
+                                   rel="nofollow">手机寄修</a></li>
+                            <li><a target="_blank"
+                                   href="http://consumer.huawei.com/cn/support/sparepart-price/index.htm"
+                                   rel="nofollow">备件价格查询</a></li>
+                            <li><a target="_blank" href="http://consumer.huawei.com/cn/support/door-to-door-service/"
+                                   rel="nofollow">上门服务</a></li>
+                        </ol>
+                    </dd>
+                </dl>
+                <dl class="s4">
+                    <dt>
+                        <p class="title">特色服务</p></dt>
+                    <dd>
+                        <ol>
+                            <li><a target="_blank" href="https://consumer.huawei.com/cn/support/distinguish/"
+                                   rel="nofollow">防伪查询</a></li>
+                            <li><a target="_blank" href="https://www.vmall.com/order/tcsProductIndex"
+                                   rel="nofollow">补购保障</a></li>
+                            <li><a target="_blank" href="https://www.vmall.com/recycle" rel="nofollow">以旧换新</a></li>
+                            <li><a target="_blank"
+                                   href="https://www.vmall.com/product/10086344499475.html#10086230774569"
+                                   rel="nofollow">礼品包装</a></li>
+                        </ol>
+                    </dd>
+                </dl>
+                <dl class="s5">
+                    <dt>
+                        <p class="title">关于我们</p></dt>
+                    <dd>
+                        <ol>
+                            <li><a target="_blank" href="https://www.huawei.com/cn/about-huawei/corporate-information"
+                                   rel="nofollow">公司介绍</a></li>
+                            <li><a target="_blank" href="https://www.vmall.com/help/faq-939.html"
+                                   rel="nofollow">华为商城简介</a>
+                            </li>
+                            <li><a target="_blank" href="https://www.vmall.com/offshop/hwshoplist"
+                                   rel="nofollow">华为线下门店</a>
+                            </li>
+                            <li><a target="_blank" href="https://www.vmall.com/offshop/shoplist"
+                                   rel="nofollow">荣耀线下门店</a>
+                            </li>
+                            <li><a target="_blank" href="https://www.vmall.com/job" rel="nofollow">诚征英才</a></li>
+                            <li><a href="javascript:;" title="意见反馈"
+                                   onclick="ec.survery.open();pushRightHelpMsg(3)">意见反馈</a>
+                            </li>
+                        </ol>
+                    </dd>
+                </dl>
+                <dl class="s6" id="serverlink">
+                    <dt class="relative">
+                        <p class="title">友情链接</p>
+                        <p class="button"><span class="btn btn-prev disabled"> &lt; </span><span
+                                class="btn btn-next"> &gt; </span></p>
+                    </dt>
+                    <dd class="">
+                        <div class="service-list clearfix" style="width: 1431px;">
+                            <ol>
+                                <li><a onclick="jump_link('http://www.huawei.com/cn/')" target="_blank"
+                                       href="http://www.huawei.com/cn/">华为集团</a></li>
+                                <li><a onclick="jump_link('https://consumer.huawei.com/cn/')" target="_blank"
+                                       href="https://consumer.huawei.com/cn/">华为CBG官网</a></li>
+                                <li><a onclick="jump_link('http://www.honor.cn/')" target="_blank"
+                                       href="http://www.honor.cn/">荣耀官网</a></li>
+                                <li><a onclick="jump_link('http://club.huawei.com/')" target="_blank"
+                                       href="http://club.huawei.com/">花粉俱乐部</a></li>
+                                <li><a onclick="jump_link('https://www.huaweicloud.com/')" target="_blank"
+                                       href="https://www.huaweicloud.com/">华为云</a></li>
+                            </ol>
+                            <ol>
+                                <li><a onclick="jump_link('https://www.vmall.com/shopdc/sitemap.html/')" target="_blank"
+                                       href="https://www.vmall.com/shopdc/sitemap.html/">网站地图</a></li>
+                                <li><a onclick="jump_link('http://app.hicloud.com/')" target="_blank"
+                                       href="http://app.hicloud.com/">华为应用市场</a></li>
+                                <li><a onclick="jump_link('http://www.wbiao.cn/')" target="_blank"
+                                       href="http://www.wbiao.cn/">万表网</a></li>
+                                <li><a onclick="jump_link('http://www.askci.com/')" target="_blank"
+                                       href="http://www.askci.com/">中商情报网</a></li>
+                                <li><a onclick="jump_link('http://www.shuame.com/')" target="_blank"
+                                       href="http://www.shuame.com/">刷机精灵</a></li>
+                            </ol>
+                            <ol>
+                                <li><a onclick="jump_link('https://www.vmall.com/')" target="_blank"
+                                       href="https://www.vmall.com/">华为手机</a></li>
+                                <li><a onclick="jump_link('http://www.17ugo.com/')" target="_blank"
+                                       href="http://www.17ugo.com/">优购物官网</a></li>
+                                <li><a onclick="jump_link('http://www.znds.com/')" target="_blank"
+                                       href="http://www.znds.com/">智能电视</a></li>
+                                <li><a onclick="jump_link('http://www.uc.cn/')" target="_blank"
+                                       href="http://www.uc.cn/">UC浏览器</a>
+                                </li>
+                                <li><a onclick="jump_link('http://www.zol.com/')" target="_blank"
+                                       href="http://www.zol.com/">中关村商城</a></li>
+                            </ol>
+                            <ol>
+                                <li><a onclick="jump_link('http://www.kugou.com/')" target="_blank"
+                                       href="http://www.kugou.com/">酷狗音乐</a></li>
+                                <li><a onclick="jump_link('http://www.958shop.com/')" target="_blank"
+                                       href="http://www.958shop.com/">百信手机网</a></li>
+                                <li><a onclick="jump_link('http://www.cardbaobao.com/')" target="_blank"
+                                       href="http://www.cardbaobao.com/">卡宝宝网</a></li>
+                                <li><a onclick="jump_link('http://www.duote.com/')" target="_blank"
+                                       href="http://www.duote.com/">多特软件下载</a></li>
+                                <li><a onclick="jump_link('http://www.tongbu.com/')" target="_blank"
+                                       href="http://www.tongbu.com/">同步助手</a></li>
+                            </ol>
+                            <ol>
+                                <li><a onclick="jump_link('http://www.fengniao.com/')" target="_blank"
+                                       href="http://www.fengniao.com/">蜂鸟摄影网</a></li>
+                                <li><a onclick="jump_link('http://www.7po.com/')" target="_blank"
+                                       href="http://www.7po.com/">奇珀论坛</a></li>
+                                <li><a onclick="jump_link('http://www.homekoo.com/')" target="_blank"
+                                       href="http://www.homekoo.com/">家具商城</a></li>
+                                <li><a onclick="jump_link('http://www.paixie.net/')" target="_blank"
+                                       href="http://www.paixie.net/">拍鞋网商城</a></li>
+                                <li><a onclick="jump_link('http://www.obolee.com/')" target="_blank"
+                                       href="http://www.obolee.com/">欧宝丽珠宝</a></li>
+                            </ol>
+                            <ol>
+                                <li><a onclick="jump_link('http://www.xungou.com/')" target="_blank"
+                                       href="http://www.xungou.com/">寻购网</a></li>
+                                <li><a onclick="jump_link('http://www.yzmg.com/')" target="_blank"
+                                       href="http://www.yzmg.com/">亿智蘑菇</a></li>
+                                <li><a onclick="jump_link('http://www.wandoujia.com/')" target="_blank"
+                                       href="http://www.wandoujia.com/">安卓市场</a></li>
+                                <li><a onclick="jump_link('http://baike.1688.com/')" target="_blank"
+                                       href="http://baike.1688.com/">阿里巴巴生意经</a></li>
+                                <li><a onclick="jump_link('http://product.cnmo.com/')" target="_blank"
+                                       href="http://product.cnmo.com/">手机大全</a></li>
+                            </ol>
+                            <ol>
+                                <li><a onclick="jump_link('http://www.anzow.com/')" target="_blank"
+                                       href="http://www.anzow.com/">安卓软件园</a></li>
+                                <li><a onclick="jump_link('http://www.wpxap.com/')" target="_blank"
+                                       href="http://www.wpxap.com/">智机论坛</a></li>
+                                <li><a onclick="jump_link('http://www.eepw.com.cn/')" target="_blank"
+                                       href="http://www.eepw.com.cn/">电子产品世界</a></li>
+                                <li><a onclick="jump_link('http://www.liqucn.com/')" target="_blank"
+                                       href="http://www.liqucn.com/">历趣网</a></li>
+                                <li><a onclick="jump_link('http://www.51bi.com/')" target="_blank"
+                                       href="http://www.51bi.com/">网购返利</a></li>
+                            </ol>
+                            <ol>
+                                <li><a onclick="jump_link('http://www.apple110.com/')" target="_blank"
+                                       href="http://www.apple110.com/">Apple110</a></li>
+                                <li><a onclick="jump_link('http://www.91.com/')" target="_blank"
+                                       href="http://www.91.com/">91手机门户网</a>
+                                </li>
+                                <li><a onclick="jump_link('http://www.ydss.cn/')" target="_blank"
+                                       href="http://www.ydss.cn/">移动叔叔</a></li>
+                                <li><a onclick="jump_link('http://www.outlets365.com/')" target="_blank"
+                                       href="http://www.outlets365.com/">奥特莱斯</a></li>
+                                <li><a onclick="jump_link('https://www.vmall.com/')" target="_blank"
+                                       href="https://www.vmall.com/">荣耀Magic</a></li>
+                            </ol>
+                            <ol>
+                                <li><a onclick="jump_link('http://car.ctrip.com/')" target="_blank"
+                                       href="http://car.ctrip.com/">携程租车</a></li>
+                                <li><a onclick="jump_link('http://www.hwtrip.com/')" target="_blank"
+                                       href="http://www.hwtrip.com/">爱旅官网</a></li>
+                            </ol>
+                        </div>
+                        <script type="text/javascript">
+                            jump_link = function (url) {
+                                var win = window.open(url, "_blank");
+                                win.opener = null;
+                            }
+                        </script>
+                    </dd>
+                </dl>
+            </div>
+            <div class="service-r fl">
+                <dl class="s7">
+                    <dt>
+                        <p class="title">400-088-6888</p></dt>
+                    <dd>
+                        <ol>
+                            <li><a>7x24小时客服热线（仅收市话费）</a></li>
+                        </ol>
+                    </dd>
+                    <dd>
+                        <a id="tools-nav-service-robotim-button" rel="nofollow" class="service-btn btn-line-primary"
+                           href="https://celia.consumer.huawei.com/vmall/#/?businessUUID=902d812b8bdb44e089e34544fb5d77e2&amp;enterurl=https%3A%2F%2Fwww.vmall.com%2Findex.html&amp;k=1&amp;from=06&amp;remark="
+                           target="_blank" style="display: block;"><i class=""></i> 在线客服</a>
+                    </dd>
+                </dl>
+                <div class="service-code clearfix">
+                    <h2>关注Vmall：</h2>
+                    <ul class="clearfix">
+                        <li class="iconfont">
+                            <a href="javascript:;"></a>
+                            <div class="service-code-img"><img src="{% static 'images/20181116180507506.jpg' %}"></div>
+                        </li>
+                        <li class="iconfont">
+                            <a target="_blank" href="https://www.toutiao.com/c/user/52373534151/#mid=52586950033"
+                               rel="nofollow"></a>
+                        </li>
+                        <li class="iconfont">
+                            <a target="_blank" href="https://weibo.com/shophuawei" rel="nofollow"></a>
+                        </li>
+                        <li class="iconfont">
+                            <a target="_blank" href="https://club.huawei.com/" rel="nofollow"></a>
+                        </li>
+                    </ul>
+
+                </div>
             </div>
         </div>
     </div>
-</div>
-<!-- 2017-02-15-服务-end -->
+    <!-- 2017-02-15-服务-end -->
 
-<!--确认对话框-->
-<div id="ec_ui_confirm" class="popup-area popup-define-area hide">
-    <div class="b">
-        <p id="ec_ui_confirm_msg"></p>
-        <div class="popup-button-area"><a id="ec_ui_confirm_yes" href="javascript:;"
-                                          class="button-action-yes"><span>是</span></a><a id="ec_ui_confirm_no"
-                                                                                         href="javascript:;"
-                                                                                         class="button-action-no"><span>否</span></a>
-        </div>
-    </div>
-    <div class="f"><s class="icon-arrow-down"></s></div>
-</div>
-
-<!--新确认对话框-->
-<div id="ec_ui_confirm_new" class="popup-area-new hide">
-    <div class="b">
-        <p id="ec_ui_confirm_new_msg"></p>
-        <div class="popup-button-area"><a id="ec_ui_confirm_new_yes" href="javascript:;"
-                                          class="box-button-style-1"><span>是</span></a><a id="ec_ui_confirm_new_no"
-                                                                                          href="javascript:;"
-                                                                                          class="box-button-style-1"><span>否</span></a>
-        </div>
-    </div>
-    <div class="f"><s class="icon-arrow-down-new"></s></div>
-</div>
-
-<!--提示对话框-->
-<div id="ec_ui_tips" class="popup-area popup-define-area hide">
-    <div class="b">
-        <p id="ec_ui_tips_msg" class="tac"></p>
-        <div class="popup-button-area tac"><a id="ec_ui_tips_yes" href="javascript:;" class="button-action-yes"
-                                              title="确定"><span>确定</span></a></div>
-    </div>
-    <div class="f"><s class="icon-arrow-down"></s></div>
-</div>
-
-<!-- 2018-10-26-悬浮工具栏-start -->
-<div class="hungBar j-hungBar">
-    <div class="hungBar-content">
-        <a target="_blank" onclick="pushRightHelpMsg(1)" href="https://www.vmall.com/cart2" timetype="timestamp"
-           class="hungBar-cart" title="购物车"><span style="display:none;"></span><i>购物车</i></a>
-        <a target="_blank" id="tools-nav-service-robotim" onclick="pushRightHelpMsg(2)"
-           href="https://celia.consumer.huawei.com/vmall/#/?businessUUID=902d812b8bdb44e089e34544fb5d77e2&amp;enterurl=https%3A%2F%2Fwww.vmall.com%2Findex.html&amp;k=1&amp;from=06&amp;remark="
-           class="hungBar-service" title="在线客服" style="display: block;"><i>在线客服</i></a>
-        <a id="tools-nav-survery" onclick="ec.survery.open();pushRightHelpMsg(3)" href="javascript:;"
-           class="hungBar-feedback" title="意见反馈" style="display: block;"><i>意见反馈</i></a>
-        <a href="javascript:;" class="hungBar-top" title="返回顶部" id="hungBar-top" style="opacity: 1; display: none;"><i>返回顶部</i></a>
-    </div>
-</div>
-<!-- 2018-10-26-悬浮工具栏-end -->
-
-<!--意见反馈box-->
-<div id="survery-box" class="ol_box_4 hide" style="width:600px;">
-    <div class="box-ct">
-        <div class="box-header">
-            <div class="box-tl"></div>
-            <div class="box-tc">
-                <div class="box-tc1"></div>
-                <div class="box-tc2"><a class="box-close" title="关闭" onclick="ec.survery.close();"
-                                        href="javascript:;"></a><span class="box-title">意见反馈</span></div>
+    <!--确认对话框-->
+    <div id="ec_ui_confirm" class="popup-area popup-define-area hide">
+        <div class="b">
+            <p id="ec_ui_confirm_msg"></p>
+            <div class="popup-button-area"><a id="ec_ui_confirm_yes" href="javascript:;"
+                                              class="button-action-yes"><span>是</span></a><a id="ec_ui_confirm_no"
+                                                                                             href="javascript:;"
+                                                                                             class="button-action-no"><span>否</span></a>
             </div>
-            <div class="box-tr"></div>
         </div>
-        <table width="100%" cellspacing="0" cellpadding="0" border="0">
-            <tbody>
-            <tr>
-                <td class="box-cl"></td>
-                <td class="box-cc">
-                    <div class="box-content">
-                        <!-- -表单-意见反馈-start -->
-                        <div class="form-feedback-area">
-                            <div class="b">
-                                <div class="form-edit-area">
-                                    <form autocomplete="off" id="form-feedback">
-                                        <div class="form-edit-table">
-                                            <table cellspacing="0" cellpadding="0" border="0">
-                                                <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <select name="type" id="surverytype">
-                                                            <option selected="selected">请选择疑问类型</option>
-                                                            <option>商品质量（手机、平板等软、硬件质量）</option>
-                                                            <option>商品缺货</option>
-                                                            <option>物流发货（发货快慢、发错货、送件人态度等）</option>
-                                                            <option>售后服务（服务网点、维修、退换货、客服）</option>
-                                                            <option>网站问题（商城功能失效、不好用等）</option>
-                                                            <option>其他问题</option>
-                                                        </select>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <b>您的问题与建议</b><span id="errMsg"></span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><textarea name="content" id="surveryContent" type="textarea"
-                                                                  class="textarea"></textarea></td>
-                                                </tr>
-                                                <tr>
-                                                    <td><b>您的联系方式</b></td>
-                                                </tr>
-                                                <tr>
-                                                    <td><input type="text" name="contact" id="surveryContact"></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="fl">
-                                                            <input type="text" maxlength="4" class="identify"
-                                                                   name="code" id="surveryVerify"
-                                                                   onkeyup="if(this.value.length==4){ec.survery.validate();}">&nbsp;&nbsp;<img
-                                                                id="surveryVerifyImg" onclick="ec.survery.reloadCode()"
-                                                                class="vam" alt="验证码">&nbsp;&nbsp;&nbsp;&nbsp;<span
-                                                                class="vam"><a class="u" href="javascript:;"
-                                                                               onclick="ec.survery.reloadCode();">换一张</a></span>
-                                                        </div>
-                                                        <div class="fr">
-                                                            <a href="javascript:;" onclick="ec.survery.submit();"
-                                                               class="button-action-yes"><span>提交</span></a>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <input name="CsrfToken" type="hidden"
-                                               value="9A8592C078F074E78ABD2887DD7293B3208ACF2002560EA8"></form>
+        <div class="f"><s class="icon-arrow-down"></s></div>
+    </div>
+
+    <!--新确认对话框-->
+    <div id="ec_ui_confirm_new" class="popup-area-new hide">
+        <div class="b">
+            <p id="ec_ui_confirm_new_msg"></p>
+            <div class="popup-button-area"><a id="ec_ui_confirm_new_yes" href="javascript:;"
+                                              class="box-button-style-1"><span>是</span></a><a id="ec_ui_confirm_new_no"
+                                                                                              href="javascript:;"
+                                                                                              class="box-button-style-1"><span>否</span></a>
+            </div>
+        </div>
+        <div class="f"><s class="icon-arrow-down-new"></s></div>
+    </div>
+
+    <!--提示对话框-->
+    <div id="ec_ui_tips" class="popup-area popup-define-area hide">
+        <div class="b">
+            <p id="ec_ui_tips_msg" class="tac"></p>
+            <div class="popup-button-area tac"><a id="ec_ui_tips_yes" href="javascript:;" class="button-action-yes"
+                                                  title="确定"><span>确定</span></a></div>
+        </div>
+        <div class="f"><s class="icon-arrow-down"></s></div>
+    </div>
+
+    <!-- 2018-10-26-悬浮工具栏-start -->
+    <div class="hungBar j-hungBar">
+        <div class="hungBar-content">
+            <a target="_blank" onclick="pushRightHelpMsg(1)" href="https://www.vmall.com/cart2" timetype="timestamp"
+               class="hungBar-cart" title="购物车"><span style="display:none;"></span><i>购物车</i></a>
+            <a target="_blank" id="tools-nav-service-robotim" onclick="pushRightHelpMsg(2)"
+               href="https://celia.consumer.huawei.com/vmall/#/?businessUUID=902d812b8bdb44e089e34544fb5d77e2&amp;enterurl=https%3A%2F%2Fwww.vmall.com%2Findex.html&amp;k=1&amp;from=06&amp;remark="
+               class="hungBar-service" title="在线客服" style="display: block;"><i>在线客服</i></a>
+            <a id="tools-nav-survery" onclick="ec.survery.open();pushRightHelpMsg(3)" href="javascript:;"
+               class="hungBar-feedback" title="意见反馈" style="display: block;"><i>意见反馈</i></a>
+            <a href="javascript:;" class="hungBar-top" title="返回顶部" id="hungBar-top" style="opacity: 1; display: none;"><i>返回顶部</i></a>
+        </div>
+    </div>
+    <!-- 2018-10-26-悬浮工具栏-end -->
+
+    <!--意见反馈box-->
+    <div id="survery-box" class="ol_box_4 hide" style="width:600px;">
+        <div class="box-ct">
+            <div class="box-header">
+                <div class="box-tl"></div>
+                <div class="box-tc">
+                    <div class="box-tc1"></div>
+                    <div class="box-tc2"><a class="box-close" title="关闭" onclick="ec.survery.close();"
+                                            href="javascript:;"></a><span class="box-title">意见反馈</span></div>
+                </div>
+                <div class="box-tr"></div>
+            </div>
+            <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                <tbody>
+                <tr>
+                    <td class="box-cl"></td>
+                    <td class="box-cc">
+                        <div class="box-content">
+                            <!-- -表单-意见反馈-start -->
+                            <div class="form-feedback-area">
+                                <div class="b">
+                                    <div class="form-edit-area">
+                                        <form autocomplete="off" id="form-feedback">
+                                            <div class="form-edit-table">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <select name="type" id="surverytype">
+                                                                <option selected="selected">请选择疑问类型</option>
+                                                                <option>商品质量（手机、平板等软、硬件质量）</option>
+                                                                <option>商品缺货</option>
+                                                                <option>物流发货（发货快慢、发错货、送件人态度等）</option>
+                                                                <option>售后服务（服务网点、维修、退换货、客服）</option>
+                                                                <option>网站问题（商城功能失效、不好用等）</option>
+                                                                <option>其他问题</option>
+                                                            </select>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <b>您的问题与建议</b><span id="errMsg"></span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><textarea name="content" id="surveryContent" type="textarea"
+                                                                      class="textarea"></textarea></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><b>您的联系方式</b></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><input type="text" name="contact" id="surveryContact"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="fl">
+                                                                <input type="text" maxlength="4" class="identify"
+                                                                       name="code" id="surveryVerify"
+                                                                       onkeyup="if(this.value.length==4){ec.survery.validate();}">&nbsp;&nbsp;<img
+                                                                    id="surveryVerifyImg"
+                                                                    onclick="ec.survery.reloadCode()"
+                                                                    class="vam" alt="验证码">&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                                                    class="vam"><a class="u" href="javascript:;"
+                                                                                   onclick="ec.survery.reloadCode();">换一张</a></span>
+                                                            </div>
+                                                            <div class="fr">
+                                                                <a href="javascript:;" onclick="ec.survery.submit();"
+                                                                   class="button-action-yes"><span>提交</span></a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <input name="CsrfToken" type="hidden"
+                                                   value="9A8592C078F074E78ABD2887DD7293B3208ACF2002560EA8"></form>
+                                    </div>
                                 </div>
                             </div>
+                            <!-- -表单-意见反馈-end -->
                         </div>
-                        <!-- -表单-意见反馈-end -->
-                    </div>
-                </td>
-                <td class="box-cr"></td>
-            </tr>
-            </tbody>
-        </table>
-        <div class="box-bottom">
-            <div class="box-bl"></div>
-            <div class="box-bc"></div>
-            <div class="box-br"></div>
-        </div>
-    </div>
-</div>
-
-<div id="globleParameter" class="hide" context="" stylepath="https://res8.vmallres.com/20190808/css"
-     scriptpath="https://res9.vmallres.com/20190808/js" imagepath="https://res.vmallres.com/20190808/images"
-     mediapath="https://res.vmallres.com/pimages/"></div>
-
-<form action="/order/confirmcart" id="miniCartForm" method="post"><input name="CsrfToken" type="hidden"
-                                                                         value="9A8592C078F074E78ABD2887DD7293B3208ACF2002560EA8">
-</form>
-<!-- 2017-02-15-底部-start -->
-<div class="footer-container" style="padding-bottom: 0px;">
-    <div class="footer">
-        <div class="footer-warrant-area clearfix"><p class="footer-warrant-logo fl"><a
-                href="https://www.vmall.com/"><img src="{% static 'images/wLelYbpMVWbj9Xpaa5Fk.png' %}" title="华为商城"></a></p>
-            <div class="fl">
-                <ul class="footer-warrant-link">
-                    <li><a href="https://www.huawei.com/cn/">华为集团</a></li>
-                    <li><a href="https://consumer.huawei.com/cn/">华为CBG官网</a></li>
-                    <li><a href="http://www.honor.cn/">荣耀官网</a></li>
-                    <li><a href="https://club.huawei.com/">花粉俱乐部</a></li>
-                    <li><a href="http://appstore.huawei.com/">华为应用市场</a></li>
-                    <li><a href="https://emui.huawei.com/cn/">EMUI</a></li>
-                    <li><a href="https://cloud.huawei.com/">华为终端云空间</a></li>
-                    <li><a href="https://developer.huawei.com/cn/">开发者联盟</a></li>
-                    <li><a href="https://m.vmall.com/">华为商城手机版</a></li>
-                    <li><a href="https://www.vmall.com/shopdc/sitemap.html">网站地图</a></li>
-                </ul>
-                <a href="https://www.vmall.com/help/faq-2635.html" rel="nofollow" target="_blank" title="隐私声明">隐私声明</a>
-                <a href="https://www.vmall.com/help/faq-778.html" rel="nofollow" target="_blank" title="服务协议">服务协议</a>
-                <a href="https://www.vmall.com/help/faq-11810.html" rel="nofollow" target="_blank" title="COOKIES">COOKIES</a>
-                Copyright © 2012-2019 华为终端有限公司 版权所有 <a href="http://beian.miit.gov.cn/"
-                                                       target="_blank">粤ICP备19015064号</a><em>|</em><a
-                    href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44190002003939" target="_blank">粤公网安备
-                44190002003939号</a><br>增值电信业务经营许可证：粤B2-20190762<em>|</em>备案主体编号：44201919072182
+                    </td>
+                    <td class="box-cr"></td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="box-bottom">
+                <div class="box-bl"></div>
+                <div class="box-bc"></div>
+                <div class="box-br"></div>
             </div>
-            <p class="fr footer-warrant-img"><a class="fl"
-                                                href="http://privacy.truste.com/privacy-seal/validation?rid=81be9ca0-c821-4e2c-ad4b-ff7cff98f75f&amp;lang=zh-cn"
-                                                rel="nofollow" target="_blank"><img alt="TRUSTe隐私认证"
-                                                                                    src="{% static 'images/20180522101715775.jpg' %}"
-                                                                                    title="TRUSTe隐私认证"></a> <a
-                    class="fl" href="https://res.vmallres.com/pimages///sale/2019-04/Vhy8y3yxVJXg0FE74dh0.png"
-                    target="_blank"><img alt="电子营业执照" src="{% static 'images/20160226162415360.png' %}" title="电子营业执照"></a></p>
         </div>
     </div>
-</div>
-<!-- 2017-02-15-底部-end -->
-<!--<script src="https://res9.vmallres.com/20190808/js/echannel/slider.min.js?20170426"></script>-->
-<!--<script src="https://res9.vmallres.com/20190808/js/echannel/swiper.min.js?20170426"></script>-->
-<script>
-    new Slider({//友情链接
-        objid: '#serverlink',
-        listname: '.service-list',
-        listitem: 'ol',
-        shownum: 1
-    }).init();
 
-    ec.load("ec.box", {loadType: "lazy"});
-    /**
-     *功能：给鼠标移动到s-dropdown上面的时候，记得给他多添加一个hover类样式
-     *目的是兼容ie6
-     *@author 李峰
-     */
-    $(function () {
-        $(".s-dropdown").hover(function () {
-            var jTpl = $(this).attr('data-tpl');
-            if (jTpl && $(this).find('.b').length < 1) {
-                $(this).append($('#' + jTpl).val());
-                $(this).removeAttr('data-tpl');
-            }
-            $(this).addClass("hover");
-        }, function () {
-            $(this).removeClass("hover");
-        });
-        var maxcolor = $('.top-banner-max').find('p').children('a').css("background-color");
-        var mincolor = $('.top-banner-min').find('p').children('a').css("background-color");
+    <div id="globleParameter" class="hide" context="" stylepath="https://res8.vmallres.com/20190808/css"
+         scriptpath="https://res9.vmallres.com/20190808/js" imagepath="https://res.vmallres.com/20190808/images"
+         mediapath="https://res.vmallres.com/pimages/"></div>
 
-        $('.top-banner-max').css({"background-color": maxcolor, overflow: "hidden"});
-        $('.top-banner-min').css({"background-color": mincolor, overflow: "hidden"});
-    });
+    <form action="/order/confirmcart" id="miniCartForm" method="post"><input name="CsrfToken" type="hidden"
+                                                                             value="9A8592C078F074E78ABD2887DD7293B3208ACF2002560EA8">
+    </form>
+    <!-- 2017-02-15-底部-start -->
+    <div class="footer-container" style="padding-bottom: 0px;">
+        <div class="footer">
+            <div class="footer-warrant-area clearfix"><p class="footer-warrant-logo fl"><a
+                    href="https://www.vmall.com/"><img src="{% static 'images/wLelYbpMVWbj9Xpaa5Fk.png' %}"
+                                                       title="华为商城"></a></p>
+                <div class="fl">
+                    <ul class="footer-warrant-link">
+                        <li><a href="https://www.huawei.com/cn/">华为集团</a></li>
+                        <li><a href="https://consumer.huawei.com/cn/">华为CBG官网</a></li>
+                        <li><a href="http://www.honor.cn/">荣耀官网</a></li>
+                        <li><a href="https://club.huawei.com/">花粉俱乐部</a></li>
+                        <li><a href="http://appstore.huawei.com/">华为应用市场</a></li>
+                        <li><a href="https://emui.huawei.com/cn/">EMUI</a></li>
+                        <li><a href="https://cloud.huawei.com/">华为终端云空间</a></li>
+                        <li><a href="https://developer.huawei.com/cn/">开发者联盟</a></li>
+                        <li><a href="https://m.vmall.com/">华为商城手机版</a></li>
+                        <li><a href="https://www.vmall.com/shopdc/sitemap.html">网站地图</a></li>
+                    </ul>
+                    <a href="https://www.vmall.com/help/faq-2635.html" rel="nofollow" target="_blank"
+                       title="隐私声明">隐私声明</a>
+                    <a href="https://www.vmall.com/help/faq-778.html" rel="nofollow" target="_blank"
+                       title="服务协议">服务协议</a>
+                    <a href="https://www.vmall.com/help/faq-11810.html" rel="nofollow" target="_blank" title="COOKIES">COOKIES</a>
+                    Copyright © 2012-2019 华为终端有限公司 版权所有 <a href="http://beian.miit.gov.cn/"
+                                                           target="_blank">粤ICP备19015064号</a><em>|</em><a
+                        href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44190002003939"
+                        target="_blank">粤公网安备
+                    44190002003939号</a><br>增值电信业务经营许可证：粤B2-20190762<em>|</em>备案主体编号：44201919072182
+                </div>
+                <p class="fr footer-warrant-img"><a class="fl"
+                                                    href="http://privacy.truste.com/privacy-seal/validation?rid=81be9ca0-c821-4e2c-ad4b-ff7cff98f75f&amp;lang=zh-cn"
+                                                    rel="nofollow" target="_blank"><img alt="TRUSTe隐私认证"
+                                                                                        src="{% static 'images/20180522101715775.jpg' %}"
+                                                                                        title="TRUSTe隐私认证"></a> <a
+                        class="fl" href="https://res.vmallres.com/pimages///sale/2019-04/Vhy8y3yxVJXg0FE74dh0.png"
+                        target="_blank"><img alt="电子营业执照" src="{% static 'images/20160226162415360.png' %}"
+                                             title="电子营业执照"></a></p>
+            </div>
+        </div>
+    </div>
+    <!-- 2017-02-15-底部-end -->
+    <!--<script src="https://res9.vmallres.com/20190808/js/echannel/slider.min.js?20170426"></script>-->
+    <!--<script src="https://res9.vmallres.com/20190808/js/echannel/swiper.min.js?20170426"></script>-->
+    <script>
+        new Slider({//友情链接
+            objid: '#serverlink',
+            listname: '.service-list',
+            listitem: 'ol',
+            shownum: 1
+        }).init();
 
-    //显示全球导航选择层
-    function showSelectRegion() {
-        var box = new ec.box($("#selectRegion-tips").val(),
-            {
-                boxid: "region-select-box",
-                boxclass: "ol_box_4",
-                title: "Please select your country or region",
-                width: 700,
-                showButton: false,
-                autoPosition: false,
-                onopen: function (box) {
-                },
-                onok: function (box) {
-                },
-                oncancel: function (box) {
-                    box.close();
-                    $(".ol_box_mask").remove();
-                },
-                onclose: function (box) {
-                    $(".ol_box_mask").remove();
+        ec.load("ec.box", {loadType: "lazy"});
+        /**
+         *功能：给鼠标移动到s-dropdown上面的时候，记得给他多添加一个hover类样式
+         *目的是兼容ie6
+         *@author 李峰
+         */
+        $(function () {
+            $(".s-dropdown").hover(function () {
+                var jTpl = $(this).attr('data-tpl');
+                if (jTpl && $(this).find('.b').length < 1) {
+                    $(this).append($('#' + jTpl).val());
+                    $(this).removeAttr('data-tpl');
                 }
+                $(this).addClass("hover");
+            }, function () {
+                $(this).removeClass("hover");
+            });
+            var maxcolor = $('.top-banner-max').find('p').children('a').css("background-color");
+            var mincolor = $('.top-banner-min').find('p').children('a').css("background-color");
+
+            $('.top-banner-max').css({"background-color": maxcolor, overflow: "hidden"});
+            $('.top-banner-min').css({"background-color": mincolor, overflow: "hidden"});
+        });
+
+        //显示全球导航选择层
+        function showSelectRegion() {
+            var box = new ec.box($("#selectRegion-tips").val(),
+                {
+                    boxid: "region-select-box",
+                    boxclass: "ol_box_4",
+                    title: "Please select your country or region",
+                    width: 700,
+                    showButton: false,
+                    autoPosition: false,
+                    onopen: function (box) {
+                    },
+                    onok: function (box) {
+                    },
+                    oncancel: function (box) {
+                        box.close();
+                        $(".ol_box_mask").remove();
+                    },
+                    onclose: function (box) {
+                        $(".ol_box_mask").remove();
+                    }
+                });
+
+            box.open();
+
+            $(".box-title").css("font-size", "24px");
+            $("#region-select-box").css("height", "auto");
+            $(".ol_box_mask").click(function () {
+                box.close();
             });
 
-        box.open();
+            $(".box-header").unbind("mousemove");
+            $(".box-header").unbind("mousedown");
 
-        $(".box-title").css("font-size", "24px");
-        $("#region-select-box").css("height", "auto");
-        $(".ol_box_mask").click(function () {
-            box.close();
-        });
+            var divTop = document.getElementById("region-select-box").offsetTop;
+            $("#region-select-box").mousedown(function (e) {
+                var e = e || window.event;
+                var region = document.getElementById("region-select-box");
 
-        $(".box-header").unbind("mousemove");
-        $(".box-header").unbind("mousedown");
+                var leftX = e.clientX - region.offsetLeft;
+                var topY = e.clientY - region.offsetTop;
+                $("#region-select-box").mousemove(function (event) {
+                    var e = event || window.event;
+                    var left = e.clientX - leftX;
+                    var top = e.clientY - topY;
 
-        var divTop = document.getElementById("region-select-box").offsetTop;
-        $("#region-select-box").mousedown(function (e) {
-            var e = e || window.event;
-            var region = document.getElementById("region-select-box");
+                    if (e.clientX - leftX < 20 - region.offsetWidth) {
+                        left = 20 - region.offsetWidth;
+                    }
+                    if (e.clientY - topY < 20 - region.offsetHeight) {
+                        top = 20 - region.offsetHeight;
+                    }
 
-            var leftX = e.clientX - region.offsetLeft;
-            var topY = e.clientY - region.offsetTop;
-            $("#region-select-box").mousemove(function (event) {
-                var e = event || window.event;
-                var left = e.clientX - leftX;
-                var top = e.clientY - topY;
+                    if (e.clientY - topY + 20 >= $(window).height()) {
+                        top = $(window).height() - 20;
+                    }
+                    if (e.clientX - leftX + 20 >= $(window).width()) {
+                        left = $(window).width() - 20;
+                    }
+                    $("#region-select-box").css({"left": left, "top": top});
+                    divTop = top;
 
-                if (e.clientX - leftX < 20 - region.offsetWidth) {
-                    left = 20 - region.offsetWidth;
-                }
-                if (e.clientY - topY < 20 - region.offsetHeight) {
-                    top = 20 - region.offsetHeight;
-                }
-
-                if (e.clientY - topY + 20 >= $(window).height()) {
-                    top = $(window).height() - 20;
-                }
-                if (e.clientX - leftX + 20 >= $(window).width()) {
-                    left = $(window).width() - 20;
-                }
-                $("#region-select-box").css({"left": left, "top": top});
-                divTop = top;
-
+                });
             });
-        });
-        $("#region-select-box").mouseup(function () {
-            $("#region-select-box").unbind("mousemove");
-        });
-        $(window).scroll(function () {
-            $("#region-select-box").offset({top: divTop});
-        });
-    }
-
-    ec.load("ec.slider", {
-        loadType: "lazy",
-        callback: function () {
-            $("#ec-erweima").slider({
-                width: 91, //必须
-                height: 96, //必须
-                style: 1,                    //1显示分页，2只显示左右箭头,3两者都显示
-                pause: 120000,           //间隔时间
-                auto: true
+            $("#region-select-box").mouseup(function () {
+                $("#region-select-box").unbind("mousemove");
+            });
+            $(window).scroll(function () {
+                $("#region-select-box").offset({top: divTop});
             });
         }
-    });
 
-    ec.ready(function () {
-        try {
-            ec.minicart.readyContent();
-            ec.minicart.microCartTpl = new ec.template($('#micro-cart-tpl').val());
-            var $miniCart = $('#header-toolbar-minicart-content');
-            $('#header-toolbar-minicart').hover(function () {
-                if (ec.checkBrowerIE()) {
-                    var act = (document.activeElement || {}).id;
-                    if (act == 'search-kw') {
-                        $("#search-kw").blur();
-                    }
-                }
+        ec.load("ec.slider", {
+            loadType: "lazy",
+            callback: function () {
+                $("#ec-erweima").slider({
+                    width: 91, //必须
+                    height: 96, //必须
+                    style: 1,                    //1显示分页，2只显示左右箭头,3两者都显示
+                    pause: 120000,           //间隔时间
+                    auto: true
+                });
+            }
+        });
 
-                $(this).unbind("mouseenter");
-                ec.minicart.content();
-            }, function () {
-                $(this).bind("mouseenter", function () {
+        ec.ready(function () {
+            try {
+                ec.minicart.readyContent();
+                ec.minicart.microCartTpl = new ec.template($('#micro-cart-tpl').val());
+                var $miniCart = $('#header-toolbar-minicart-content');
+                $('#header-toolbar-minicart').hover(function () {
                     if (ec.checkBrowerIE()) {
                         var act = (document.activeElement || {}).id;
                         if (act == 'search-kw') {
@@ -11505,20 +11545,21 @@ id="top-banner-min-close"&gt;关闭&lt;/a&gt;
 
                     $(this).unbind("mouseenter");
                     ec.minicart.content();
+                }, function () {
+                    $(this).bind("mouseenter", function () {
+                        if (ec.checkBrowerIE()) {
+                            var act = (document.activeElement || {}).id;
+                            if (act == 'search-kw') {
+                                $("#search-kw").blur();
+                            }
+                        }
+
+                        $(this).unbind("mouseenter");
+                        ec.minicart.content();
+                    });
                 });
-            });
 
-            $('#up_loginName-hover').hover(function () {
-                if (ec.checkBrowerIE()) {
-                    var act = (document.activeElement || {}).id;
-                    if (act == 'search-kw') {
-                        $("#search-kw").blur();
-                    }
-                }
-
-                $(this).unbind("mouseenter");
-            }, function () {
-                $(this).bind("mouseenter", function () {
+                $('#up_loginName-hover').hover(function () {
                     if (ec.checkBrowerIE()) {
                         var act = (document.activeElement || {}).id;
                         if (act == 'search-kw') {
@@ -11527,147 +11568,157 @@ id="top-banner-min-close"&gt;关闭&lt;/a&gt;
                     }
 
                     $(this).unbind("mouseenter");
+                }, function () {
+                    $(this).bind("mouseenter", function () {
+                        if (ec.checkBrowerIE()) {
+                            var act = (document.activeElement || {}).id;
+                            if (act == 'search-kw') {
+                                $("#search-kw").blur();
+                            }
+                        }
+
+                        $(this).unbind("mouseenter");
+                    });
                 });
+
+            } catch (err) {
+                // console.log(err);
+            }
+
+        });
+        // 更新购物车数字
+        $(function () {
+            $('.j-hungBar .hungBar-cart').hover(function () {
+                ec.minicart.updateMiniCartNum();
             });
+        });
 
-        } catch (err) {
-            // console.log(err);
+        (function () {
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            } else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+
+        function pushMyOrderMsg() {
+            ec.account.afterLogin(function () {
+                ec.redirectTo("https://www.vmall.com/member/order?t=1568209383280timestamp");
+            });
+            ec.dapClick(300000301, {
+                "click": "1"
+            });
         }
 
-    });
-    // 更新购物车数字
-    $(function () {
-        $('.j-hungBar .hungBar-cart').hover(function () {
-            ec.minicart.updateMiniCartNum();
-        });
-    });
-
-    (function () {
-        var bp = document.createElement('script');
-        var curProtocol = window.location.protocol.split(':')[0];
-        if (curProtocol === 'https') {
-            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-        } else {
-            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        function pushMyCartMsg() {
+            ec.dapClick(300000401, {
+                "click": "1"
+            });
         }
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(bp, s);
-    })();
 
-    function pushMyOrderMsg() {
-        ec.account.afterLogin(function () {
-            ec.redirectTo("https://www.vmall.com/member/order?t=1568209383280timestamp");
+
+        function pushCartProMsg(skuId, url, location) {
+            ec.dapClick(300000402, {
+                "SKUID": skuId,
+                "URL": url,
+                "location": location,
+                "click": "1"
+            });
+        }
+
+        function pushFootAdvertMsg(name, url) {
+            ec.dapClick(300000501, {
+                "name": name,
+                "URL": url,
+                "click": "1"
+            });
+        }
+
+        $(".fl").find("dd").find("a").bind("click", function () {
+            var HREF = "";
+            HREF = this.href;
+            var name = this.innerHTML;
+            if (HREF == null || HREF == "") {
+                return;
+            }
+            if (this.id == "tools-nav-service-robotim-button") {
+                name = "在线客服";
+            }
+            if (this.className == "service-btn btn-report") {
+                name = "不良信息举报";
+            }
+            pushFootAdvertMsg(name, HREF);
         });
-        ec.dapClick(300000301, {
-            "click": "1"
+
+
+        $('.footer-warrant-area.clearfix a').click(function () {
+            var dapData = {
+                "URL": $(this).attr("href"),
+                "click": "1"
+            };
+            if ($(this).find('img').length > 0) {
+                dapData.ADID = $(this).find("img").attr("src");
+            } else {
+                dapData.name = $(this).text();
+            }
+            ec.dapClick(300000502, dapData);
         });
-    }
 
-    function pushMyCartMsg() {
-        ec.dapClick(300000401, {
-            "click": "1"
+        function pushRightHelpMsg(index) {
+            var buttonName = ['', '购物车', '在线客服', '意见反馈'][index];
+            ec.dapClick(300000601, {
+                "buttonName": buttonName,
+                "click": "1",
+                'index': index
+            });
+        }
+
+        jump = function (url, obj) {
+            if (typeof (obj.html()) != "undefined" && obj.html() != null && obj.html() != "") {
+                pushFootAdvertMsg($(this).html(), url);
+            }
+            var win = ec.openWindow(url);
+            win.opener = null;
+        }
+
+        function pushProRelationMsg(productId, column) {
+            ec.dapClick(300020601, {
+                "productId": productId,
+                "row": "1",
+                "column": column,
+                "click": "1"
+            });
+        }
+
+        function pushProHotMsg(skuCode) {
+            ec.dapClick(300020701, {
+                "SKUCode": skuCode,
+                "click": "1"
+            });
+        }
+
+        $('#serverlink a').each(function () {
+            var $a = $(this);
+            var url = $a.attr('onclick') || '';
+            url = url.toString();
+            var m = url.match(/jump_link\('([^']+)'\)/);
+            if (m && m[1]) {
+                url = m[1];
+                $a.attr('target', '_blank').attr('href', url);
+            }
         });
-    }
-
-
-    function pushCartProMsg(skuId, url, location) {
-        ec.dapClick(300000402, {
-            "SKUID": skuId,
-            "URL": url,
-            "location": location,
-            "click": "1"
-        });
-    }
-
-    function pushFootAdvertMsg(name, url) {
-        ec.dapClick(300000501, {
-            "name": name,
-            "URL": url,
-            "click": "1"
-        });
-    }
-
-    $(".fl").find("dd").find("a").bind("click", function () {
-        var HREF = "";
-        HREF = this.href;
-        var name = this.innerHTML;
-        if (HREF == null || HREF == "") {
+        jump_link = function (url) {
             return;
         }
-        if (this.id == "tools-nav-service-robotim-button") {
-            name = "在线客服";
-        }
-        if (this.className == "service-btn btn-report") {
-            name = "不良信息举报";
-        }
-        pushFootAdvertMsg(name, HREF);
-    });
+    </script>
 
-
-    $('.footer-warrant-area.clearfix a').click(function () {
-        var dapData = {
-            "URL": $(this).attr("href"),
-            "click": "1"
-        };
-        if ($(this).find('img').length > 0) {
-            dapData.ADID = $(this).find("img").attr("src");
-        } else {
-            dapData.name = $(this).text();
-        }
-        ec.dapClick(300000502, dapData);
-    });
-
-    function pushRightHelpMsg(index) {
-        var buttonName = ['', '购物车', '在线客服', '意见反馈'][index];
-        ec.dapClick(300000601, {
-            "buttonName": buttonName,
-            "click": "1",
-            'index': index
-        });
-    }
-
-    jump = function (url, obj) {
-        if (typeof (obj.html()) != "undefined" && obj.html() != null && obj.html() != "") {
-            pushFootAdvertMsg($(this).html(), url);
-        }
-        var win = ec.openWindow(url);
-        win.opener = null;
-    }
-
-    function pushProRelationMsg(productId, column) {
-        ec.dapClick(300020601, {
-            "productId": productId,
-            "row": "1",
-            "column": column,
-            "click": "1"
-        });
-    }
-
-    function pushProHotMsg(skuCode) {
-        ec.dapClick(300020701, {
-            "SKUCode": skuCode,
-            "click": "1"
-        });
-    }
-
-    $('#serverlink a').each(function () {
-        var $a = $(this);
-        var url = $a.attr('onclick') || '';
-        url = url.toString();
-        var m = url.match(/jump_link\('([^']+)'\)/);
-        if (m && m[1]) {
-            url = m[1];
-            $a.attr('target', '_blank').attr('href', url);
-        }
-    });
-    jump_link = function (url) {
-        return;
-    }
-</script>
-
-<iframe style="display: none;" src="javascript:false"></iframe>
-<script src="{% static 'js/dmpa-min.js' %}" async="" id="dmpa"></script>
-<script src="{% static 'js/vmallcsrf.js' %}"></script>
+    <iframe style="display: none;" src="javascript:false"></iframe>
+    <script src="{% static 'js/dmpa-min.js' %}" async="" id="dmpa"></script>
+    <script src="{% static 'js/vmallcsrf.js' %}"></script>
 {% endblock foot %}
 </body>
 </html>
