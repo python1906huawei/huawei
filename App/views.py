@@ -33,11 +33,7 @@ class RegisterView(ListView):
 
 # 顶部  底部
 def top(request):
-    return render(request, 'head_foot/head.html')
-
-
-def foot(request):
-    return render(request, 'head_foot/foot.html')
+    return render(request, 'base.html')
 
 
 # 商品详情
