@@ -26,7 +26,7 @@ class RegisterView(ListView):
         return render(request, 'register.html')
 
 
-# 顶部+底部
+# 顶部+底部 的继承
 class TopView(ListView):
     template_name = 'base.html'
 
