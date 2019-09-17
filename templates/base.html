@@ -1254,7 +1254,7 @@ src="https://res.vmallres.com/pimages//sale/2018-12/6Y7SW4v4hnJ9kl9fDC9d.jpg"
         <div class="layout">
             <div class="left">
                 <!-- 2017-02-15-logo-start -->
-                <div class="logo"><a href="https://www.vmall.com/index.html" title="Vmall.com - 华为商城"
+                <div class="logo"><a href="{% url 'app:index' %}" title="Vmall.com - 华为商城"
                                      onclick="pushLogoClickMsg('https://res.vmallres.com/pimages//sale/2018-11/x9a6U8WW0bhrA7u0FIlY.png','https\x3A\x2F\x2Fwww.vmall.com\x2Findex.html')"><img
                         src="{% static 'images/x9a6U8WW0bhrA7u0FIlY.png' %}"
                         alt="Vmall.com - 华为商城"></a></div>
@@ -1264,7 +1264,7 @@ src="https://res.vmallres.com/pimages//sale/2018-12/6Y7SW4v4hnJ9kl9fDC9d.jpg"
                 <div class="naver">
                     <ul id="naver" class="clearfix">
                         <li id="zxnav_0" data-id="0">
-                            <a href="https://www.vmall.com/list-36" target="_blank"><span>手机</span></a>
+                            <a href="{% url 'app:phonelist' %}" target="_blank"><span>手机</span></a>
                             <input id="zxnav_0_flag" type="hidden" autocomplete="off" value="yes">
                             <input id="zxnav_0_name" type="hidden" autocomplete="off" value="手机">
                         </li>
@@ -2123,18 +2123,18 @@ src="https://res.vmallres.com/pimages//sale/2018-12/6Y7SW4v4hnJ9kl9fDC9d.jpg"
     <input type="hidden" value="" id="packageCode">
     <input type="hidden" value="" id="packageListCode">
 
-    <div class="hr-10"></div>
+{#    <div class="hr-10"></div>#}
 
 
-    <div class="g">详细导航,暂停
-        {#    <!--面包屑 -->#}
-        {#    <div class="breadcrumb-area fcn"><a href="https://www.vmall.com/index.html" title="首页">首页</a>&nbsp;&gt;&nbsp;<a#}
-        {#            href="https://www.vmall.com/list-36" title="手机">手机</a>&nbsp;&gt;&nbsp;<a#}
-        {#            href="https://www.vmall.com/list-75" title="荣耀">荣耀</a>&nbsp;&gt;&nbsp;#}
-        {#        <span id="bread-pro-name">【100元订金】荣耀Play3 6.39英寸魅眼全视屏 4000mAh大电池 真4800万AI三摄 麒麟710F自研芯片 全网通4GB+64GB （幻夜黑）</span>#}
-        {#    </div>#}
-    </div>
-    <div class="hr-10"></div>
+{#    <div class="g">详细导航,暂停#}
+            <!--面包屑 -->
+{#            <div class="breadcrumb-area fcn"><a href="https://www.vmall.com/index.html" title="首页">首页</a>&nbsp;&gt;&nbsp;<a#}
+{#                    href="https://www.vmall.com/list-36" title="手机">手机</a>&nbsp;&gt;&nbsp;<a#}
+{#                    href="https://www.vmall.com/list-75" title="荣耀">荣耀</a>&nbsp;&gt;&nbsp;#}
+{#                <span id="bread-pro-name">【100元订金】荣耀Play3 6.39英寸魅眼全视屏 4000mAh大电池 真4800万AI三摄 麒麟710F自研芯片 全网通4GB+64GB （幻夜黑）</span>#}
+{#            </div>#}
+{#    </div>#}
+{#    <div class="hr-10"></div>#}
 
 
     <!-- 20170519-弹出层-优惠卷-start -->

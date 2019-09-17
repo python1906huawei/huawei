@@ -3,7 +3,7 @@ import re
 from django import forms
 from django.core.exceptions import ValidationError
 
-from App.models import User
+from user.models import User
 
 
 def check_password(password):
@@ -11,10 +11,14 @@ def check_password(password):
             re.search(r'[a-z]', password): \
             return password
     raise ValidationError('密码必须包含大写字母，小写字母，数字，特殊字符')
+
+
 def check_number(phonenumber):
-    if re.search(r'^[1]\d{10}',phonenumber):
+    if re.search(r'^[1]\d{10}', phonenumber):
         return phonenumber
     raise ValidationError('手机号不符合规则')
+
+
 class RegisterForm(forms.Form):
     country = forms.CharField(label='国籍', error_messages={
         'required': '国际必须输入'
@@ -23,13 +27,12 @@ class RegisterForm(forms.Form):
                                   max_length=11,
                                   min_length=11,
 
-                               error_messages={
-                                   'max_length': '手机号为11位',
-                                   'min_length': '手机号为11位',
-                                   'required': '手机号必须输入'
-                               },
+                                  error_messages={
+                                      'max_length': '手机号为11位',
+                                      'min_length': '手机号为11位',
+                                      'required': '手机号必须输入'
+                                  },
                                   validators=[check_number],
-
 
                                   )
     message = forms.EmailField(label='短信验证码', error_messages={
