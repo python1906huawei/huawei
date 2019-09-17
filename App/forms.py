@@ -20,21 +20,18 @@ def check_number(phonenumber):
 
 
 class RegisterForm(forms.Form):
-    country = forms.CharField(label='国籍', error_messages={
-        'required': '国际必须输入'
-    })
-    phonenumber = forms.CharField(label='用户名',
-                                  max_length=11,
-                                  min_length=11,
+    mobile = forms.CharField(label='用户名',
+                             max_length=11,
+                             min_length=11,
 
-                                  error_messages={
-                                      'max_length': '手机号为11位',
-                                      'min_length': '手机号为11位',
-                                      'required': '手机号必须输入'
-                                  },
-                                  validators=[check_number],
+                             error_messages={
+                                 'max_length': '手机号为11位',
+                                 'min_length': '手机号为11位',
+                                 'required': '手机号必须输入'
+                             },
+                             validators=[check_number],
 
-                                  )
+                             )
     message = forms.EmailField(label='短信验证码', error_messages={
         'required': '必须输入验证码',
 
@@ -74,10 +71,10 @@ class RegisterForm(forms.Form):
     # 自定义验证方法
     # 自定义的验证规则：clean_字段名
     def clean_phonenumber(self):
-        res = User.objects.filter(username=self.cleaned_data.get('phonenumber')).exists()
+        res = User.objects.filter(username=self.cleaned_data.get('mobile')).exists()
         if res:
             raise ValidationError("已经注册过，请尝试找回密码")
-        return self.cleaned_data.get('phonenumber')
+        return self.cleaned_data.get('mobile')
 
     # 全局验证方法
     def clean(self):
